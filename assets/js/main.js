@@ -1,7 +1,7 @@
 function handleNavBarFunctionality() {
   // header scroll effect
   document.addEventListener('scroll', () => {
-    const header = document.querySelector('.theme-header-graper');
+    const header = document.querySelector('#header');
     const progress = document.querySelector('#progress');
 
     if (window.scrollY > 0) {
@@ -99,64 +99,33 @@ mobileUlParent.addEventListener('click', (e) => {
   e.stopPropagation();
 });
 
-//handle buttons
-function styleThemeButtons() {
-  const buttons = document.querySelectorAll('.theme-button');
-  buttons.forEach((button) => {
-    // Add button classes
-    button.classList.add(
-      'whitespace-nowrap',
-      'relative',
-      'px-4',
-      'py-2',
-      // 'font-bold',
-      'p-normal',
-      'text-themeBlue',
-      'rounded-lg',
-      'group'
-    );
+function initContactUsForm() {
+  // Select the form by its ID
+  const form = document.getElementById('contact-us-form');
+  if (!form) return;
+  // Get all input fields inside the form
+  const inputs = form.querySelectorAll('input, textarea'); // Includes both input and textarea elements
 
-    // Create the first span
-    const span1 = document.createElement('span');
-    span1.classList.add(
-      'block',
-      '-z-10',
-      'rounded-lg',
-      'size-full',
-      'absolute',
-      'inset-0',
-      'opacity-100',
-      'group-hover:opacity-0',
-      'bg-gradient-to-r',
-      'from-themeGreen',
-      'via-themeGreen/60',
-      'to-themeGreen',
-      'transition', // Individual class
-      'duration-300' // Individual class
-    );
+  // Loop over each input field
+  inputs.forEach((input) => {
+    // Add an event listener for the 'input' event
+    input.addEventListener('input', (e) => {
+      if (e.target.value.trim() !== '') {
+        // If input has a value, add the data-te-input-state-active attribute
+        e.target.setAttribute('data-te-input-state-active', '');
+      } else {
+        // If input is empty, remove the attribute
+        e.target.removeAttribute('data-te-input-state-active');
+      }
+    });
 
-    // Create the second span
-    const span2 = document.createElement('span');
-    span2.classList.add(
-      'block',
-      '-z-10',
-      'rounded-lg',
-      'size-full',
-      'absolute',
-      'inset-0',
-      'opacity-0',
-      'group-hover:opacity-100',
-      'bg-gradient-to-r',
-      'from-themeGreen/60',
-      'via-themeGreen',
-      'to-themeGreen/60',
-      'transition', // Individual class
-      'duration-300' // Individual class
-    );
-
-    // Append spans to button
-    button.appendChild(span1);
-    button.appendChild(span2);
+    // Handle state on page load (e.g., prefilled values)
+    if (input.value.trim() !== '') {
+      input.setAttribute('data-te-input-state-active', '');
+    } else {
+      input.removeAttribute('data-te-input-state-active');
+    }
   });
 }
-styleThemeButtons();
+
+initContactUsForm();
