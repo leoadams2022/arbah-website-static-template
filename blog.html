@@ -1,0 +1,1547 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>أربَاحْ</title>
+    <link rel="stylesheet" href="./assets/css/output.css" />
+    <!-- <link href="./assets/css/animate.min.css" rel="stylesheet" /> -->
+    <link rel="stylesheet" href="./assets/css/blog.css" />
+    <link rel="stylesheet" href="./assets/css/aos.css" />
+
+    <link rel="icon" href="./assets/image/favicon.png" type="image/x-icon" />
+  </head>
+  <body class="">
+    <!-- headr  -->
+    <header
+      class="theme-header-graper sticky left-0 top-0 z-50 h-[90px] pt-[40px] transition-all duration-300"
+      role="banner"
+    >
+      <nav
+        class="flex h-full items-center justify-between px-6 py-4 2xl:container sm:px-[10%] 2xl:mx-auto 2xl:px-0"
+        role="navigation"
+        aria-label="Main Navigation"
+      >
+        <!-- Logo -->
+        <a
+          href="./home.html"
+          class="inline-block w-[100px] sm:w-[130px] sm:flex-shrink-0"
+          aria-label="Homepage"
+        >
+          <img
+            class="w-full"
+            src="./assets/image/logo_blue.svg"
+            alt="أربَاحْ"
+          />
+        </a>
+
+        <!-- Navigation Links -->
+        <div class="flex items-center gap-4">
+          <ul
+            id="navigation-ul"
+            class="hidden items-center justify-between gap-4 font-bold text-blue-950 lg:flex"
+            role="menu"
+            aria-label="Primary Navigation"
+          >
+            <li
+              class="group pointer-events-none relative cursor-pointer whitespace-nowrap rounded-sm p-2 transition-colors duration-150 hover:bg-gray-200"
+              role="menuitem"
+            >
+              <div class="pointer-events-auto w-full">
+                <a href="./home.html" class="inline-block w-full"> الرئيسية </a>
+              </div>
+            </li>
+            <li
+              class="contain-sub-menu group relative cursor-pointer whitespace-nowrap rounded-sm p-2 transition-colors duration-150 hover:bg-gray-200"
+              role="menuitem"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <span>خدماتنا</span>
+              <!-- sub menu -->
+              <ul
+                class="sub-menu absolute right-0 top-full hidden max-w-max rounded-md bg-white px-4 py-2 shadow-lg group-hover:block"
+                role="menu"
+                aria-label="Our Services"
+              >
+                <li
+                  class="group pointer-events-none relative cursor-pointer whitespace-nowrap rounded-sm p-2 transition-colors duration-150 hover:bg-gray-200"
+                  role="menuitem"
+                >
+                  <div class="pointer-events-auto w-full">
+                    <a href="./service.html" class="inline-block w-full"
+                      >مسك الدفاتر</a
+                    >
+                  </div>
+                </li>
+                <li
+                  class="group pointer-events-none relative cursor-pointer whitespace-nowrap rounded-sm p-2 transition-colors duration-150 hover:bg-gray-200"
+                  role="menuitem"
+                >
+                  <div class="pointer-events-auto w-full">
+                    <a href="./service2.html" class="inline-block w-full"
+                      >المراجعة و التدقيق</a
+                    >
+                  </div>
+                </li>
+                <li
+                  class="group pointer-events-none relative cursor-pointer whitespace-nowrap rounded-sm p-2 transition-colors duration-150 hover:bg-gray-200"
+                  role="menuitem"
+                >
+                  <div class="pointer-events-auto w-full">
+                    <a href="./service3.html" class="inline-block w-full"
+                      >تشغيل الانظمة المحاسبية</a
+                    >
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li
+              class="group pointer-events-none relative cursor-pointer whitespace-nowrap rounded-sm p-2 transition-colors duration-150 hover:bg-gray-200"
+              role="menuitem"
+            >
+              <div class="pointer-events-auto w-full">
+                <a href="./about.html" class="inline-block w-full">من نحن</a>
+              </div>
+            </li>
+            <li
+              class="group pointer-events-none relative cursor-pointer whitespace-nowrap rounded-sm p-2 transition-colors duration-150 hover:bg-gray-200"
+              role="menuitem"
+            >
+              <div class="pointer-events-auto w-full">
+                <a href="./contact.html" class="inline-block w-full"
+                  >تواصل معنا</a
+                >
+              </div>
+            </li>
+            <li
+              class="group pointer-events-none relative cursor-pointer whitespace-nowrap rounded-sm p-2 transition-colors duration-150 hover:bg-gray-200"
+              role="menuitem"
+            >
+              <div class="pointer-events-auto w-full">
+                <a href="./blogs.html" class="inline-block w-full">المدونة</a>
+              </div>
+            </li>
+          </ul>
+          <!-- Try Now Button -->
+          <div class="hidden lg:block">
+            <a
+              href="./freeConsultation.html"
+              class="p-normal group relative whitespace-nowrap rounded-lg px-2 py-1 text-themeBlue"
+              aria-label="Request Free Consultation"
+            >
+              أستشارة مجانية
+              <span
+                class="absolute inset-0 -z-10 block size-full rounded-lg bg-gradient-to-r from-themeGreen via-themeGreen/60 to-themeGreen opacity-100 transition duration-300 group-hover:opacity-0"
+              ></span>
+              <span
+                class="absolute inset-0 -z-10 block size-full rounded-lg bg-gradient-to-r from-themeGreen/60 via-themeGreen to-themeGreen/60 opacity-0 transition duration-300 group-hover:opacity-100"
+              ></span>
+            </a>
+          </div>
+          <div class="flex items-center gap-1 lg:hidden">
+            <!-- Try Now Button -->
+            <a
+              href="./freeConsultation.html"
+              class="group relative whitespace-nowrap rounded-lg px-2 py-1 text-xs text-themeBlue md:text-sm md:font-semibold"
+              aria-label="Request Free Consultation"
+            >
+              أستشارة مجانية
+              <span
+                class="absolute inset-0 -z-10 block size-full rounded-lg bg-gradient-to-r from-themeGreen via-themeGreen/60 to-themeGreen opacity-100 transition duration-300 group-hover:opacity-0"
+              ></span>
+              <span
+                class="absolute inset-0 -z-10 block size-full rounded-lg bg-gradient-to-r from-themeGreen/60 via-themeGreen to-themeGreen/60 opacity-0 transition duration-300 group-hover:opacity-100"
+              ></span>
+            </a>
+            <!-- Hamburger Icon -->
+            <button
+              id="menu-btn"
+              class="cursor-pointer rounded-sm p-2 text-themeBlue transition-colors duration-150 hover:bg-gray-200 hover:text-gray-700 focus:outline-none"
+              aria-label="Open Menu"
+              aria-controls="mobile-menu"
+              aria-expanded="false"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16m-7 6h7"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div
+          id="mobile-menu"
+          class="fixed -left-full top-0 h-screen w-screen transition-all duration-300 lg:hidden"
+          aria-label="Mobile Navigation"
+          role="dialog"
+          aria-hidden="true"
+        >
+          <div
+            id="mobile-menu-ul-parent"
+            class="absolute left-0 top-0 flex h-full w-full flex-col items-center justify-between overflow-y-auto bg-slate-50 pb-6 pt-8 shadow-lg sm:w-1/2 sm:pt-0"
+            role="menu"
+            aria-label="mobile Navigation"
+          >
+            <!-- close the mobile menu button  -->
+            <button
+              id="mobile-menu-close-button"
+              class="absolute left-2 top-2 block cursor-pointer rounded-sm p-2 text-themeBlue transition-colors duration-150 hover:bg-gray-200 hover:text-gray-700 focus:outline-none sm:hidden"
+              aria-label="Close Menu"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                class="size-6"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6 18 18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+            <!-- mobile menu ul  -->
+            <ul class="w-full space-y-2 px-6 py-4 text-xl" role="menu">
+              <li
+                class="group pointer-events-none relative cursor-pointer whitespace-nowrap rounded-sm p-2 transition-colors duration-150 hover:bg-gray-200"
+                role="menuitem"
+              >
+                <div class="pointer-events-auto w-full">
+                  <a href="./home.html" class="inline-block w-full">الرئيسية</a>
+                </div>
+              </li>
+              <li class="group relative whitespace-nowrap" role="menuitem">
+                <span class="inline-block w-full p-2">خدماتنا</span>
+                <ul class="px-4 py-2" role="menu">
+                  <li
+                    class="group pointer-events-none relative cursor-pointer whitespace-nowrap rounded-sm p-2 transition-colors duration-150 hover:bg-gray-200"
+                    role="menuitem"
+                  >
+                    <div class="pointer-events-auto w-full">
+                      <a href="./service.html" class="inline-block w-full"
+                        >مسك الدفاتر</a
+                      >
+                    </div>
+                  </li>
+                  <li
+                    class="group pointer-events-none relative cursor-pointer whitespace-nowrap rounded-sm p-2 transition-colors duration-150 hover:bg-gray-200"
+                    role="menuitem"
+                  >
+                    <div class="pointer-events-auto w-full">
+                      <a href="./service2.html" class="inline-block w-full"
+                        >المراجعة و التدقيق</a
+                      >
+                    </div>
+                  </li>
+                  <li
+                    class="group pointer-events-none relative cursor-pointer whitespace-nowrap rounded-sm p-2 transition-colors duration-150 hover:bg-gray-200"
+                    role="menuitem"
+                  >
+                    <div class="pointer-events-auto w-full">
+                      <a href="./service3.html" class="inline-block w-full"
+                        >تشغيل الانظمة المحاسبية</a
+                      >
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li
+                class="group pointer-events-none relative cursor-pointer whitespace-nowrap rounded-sm p-2 transition-colors duration-150 hover:bg-gray-200"
+                role="menuitem"
+              >
+                <div class="pointer-events-auto w-full">
+                  <a href="./about.html" class="inline-block w-full">من نحن</a>
+                </div>
+              </li>
+              <li
+                class="group pointer-events-none relative cursor-pointer whitespace-nowrap rounded-sm p-2 transition-colors duration-150 hover:bg-gray-200"
+                role="menuitem"
+              >
+                <div class="pointer-events-auto w-full">
+                  <a href="./contact.html" class="inline-block w-full"
+                    >تواصل معنا</a
+                  >
+                </div>
+              </li>
+              <li
+                class="group pointer-events-none relative cursor-pointer whitespace-nowrap rounded-sm p-2 transition-colors duration-150 hover:bg-gray-200"
+                role="menuitem"
+              >
+                <div class="pointer-events-auto w-full">
+                  <a href="./blogs.html" class="inline-block w-full">المدونة</a>
+                </div>
+              </li>
+            </ul>
+
+            <div class="flex flex-wrap justify-center gap-2">
+              <a href="#" aria-label="Facebook">
+                <img
+                  src="./assets/image/icons/facebook.png"
+                  class="w-8 lg:w-10"
+                  alt="Facebook Icon"
+                />
+              </a>
+              <a href="#" aria-label="Instagram">
+                <img
+                  src="./assets/image/icons/instagram.png"
+                  class="w-8 lg:w-10"
+                  alt="Instagram Icon"
+                />
+              </a>
+              <a href="#" aria-label="LinkedIn">
+                <img
+                  src="./assets/image/icons/linkedin.png"
+                  class="w-8 lg:w-10"
+                  alt="LinkedIn Icon"
+                />
+              </a>
+              <a href="#" aria-label="Twitter">
+                <img
+                  src="./assets/image/icons/x.png"
+                  class="w-8 lg:w-10"
+                  alt="X Twitter Icon"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--image-->
+    <div
+      class="mx-auto mt-8 hidden min-h-[70svh] max-w-6xl bg-cover bg-right-bottom bg-no-repeat 2xl:container lg:block"
+      style="background-image: url('./assets/image/blog/blog_banner.jpg')"
+      data-aos="fade-up"
+    ></div>
+    <img
+      src="./assets/image/blog/blog_banner.jpg"
+      class="mx-auto mt-8 max-h-[50svh] lg:hidden"
+      alt=""
+      data-aos="fade-up"
+    />
+
+    <!--Container-->
+    <div
+      class="mx-auto mb-20 max-w-5xl 2xl:container lg:-mt-32 2xl:px-16"
+      data-aos="fade-up"
+    >
+      <article
+        class="w-full bg-white px-8 pb-5 pt-10 shadow-2xl"
+        role="article"
+        aria-labelledby="post-title"
+      >
+        <!--Post Content-->
+        <!--Title-->
+        <header class="mb-8 text-center" role="banner">
+          <h1 id="post-title" class="h2 mb-3 text-themeBlue">
+            ما هي تراخيص التخفيضات
+          </h1>
+          <p class="p-small text-themeGreen" aria-label="Publication Date">
+            نوفمبر 7, 2024
+          </p>
+        </header>
+        <!--/Title-->
+        <!-- main content  -->
+        <section role="region" aria-labelledby="section-main-content">
+          <p class="p-normal mb-4 text-slate-900">
+            في المملكة العربية السعودية، يتطلب إطلاق العروض الترويجية أو
+            التخفيضات الحصول على تصريح رسمي من وزارة التجارة، إذا ما هي تراخيص
+            التخفيضات؟ هذا التصريح يهدف إلى حماية المستهلك وضمان شفافية الأسعار،
+            سواء كانت العروض موسمية أو ترويجية لذا، يُلزم التجار بتقديم طلب
+            للحصول على التصريح عبر بوابة وزارة التجارة الإلكترونية، حيث أن
+            العروض بدون تصريح قد تعرضهم للغرامات والعقوبات القانونية، لذا يبين
+            أرباح للخدمات المحاسبية الفرق بين العروض والتخفيضات و كيفية طلب
+            ترخيص المنتجات.
+          </p>
+
+          <h2 class="h3 mt-8 py-2 text-themeBlue" id="section-main-content">
+            ما هي تراخيص التخفيضات
+          </h2>
+          <p class="p-normal mb-4 text-slate-900">
+            هي تراخيص يتم إصدارها بشكل إلكتروني من قبل وزارة التجارة بالمملكة،
+            والتي تعد ليست مجرد إجراء روتيني فحسب، بل تصاريح ضرورية لضمان أن
+            التخفيضات المقدمة للتجار تتماشى مع القوانين واللوائح المحلية، كما أن
+            تراخيص التخفيضات تختلف حسب نوع التخفيضات المطلوبة سواء كانت شاملة أو
+            جزئية أو موسمية.
+          </p>
+          <p class="p-normal mb-4 text-slate-900">
+            على سبيل المثال التخفيضات الشاملة تغطي جميع المنتجات الموجودة في
+            المتجر أو على الموقع الإلكتروني، في حين أن التخفيضات الجزئية تستهدف
+            جزءًا معين من المنتجات، وهناك أيضًا التخفيضات الموسمية التي تقدم في
+            أوقات محددة من السنة، مثل تخفيضات اليوم الوطني، ومن خلال إصدار هذه
+            التراخيص يتم التأكد من أن جميع العروض والتخفيضات تمت الموافقة عليها
+            وأنها تتماشى مع القانون التجاري.
+          </p>
+
+          <h2 class="h3 mt-8 py-2 text-themeBlue">
+            ما هو الفرق بين التخفيضات والعروض
+          </h2>
+          <p class="p-normal mb-4 text-slate-900">
+            بعد التعرف على ما هي تراخيص التخفيضات وضرورة استخراجها بشكل قانوني
+            يتماشى مع القوانين واللوائح المنظمة للأعمال التجارية المحلية، من
+            المهم فهم الفرق بين كلاً من التخفيضات والعروض الترويجية والتي تكون
+            على النحو التالي:
+          </p>
+
+          <p class="p-normal mb-4 text-slate-900">
+            التخفيضات كما يوحي الاسم هي عملية خفض مباشر لأسعار المنتجات أو
+            الخدمات بهدف جذب العملاء وزيادة المبيعات وعلى سبيل المثال يمكن أن
+            يقدم متجر تخفيضات بنسبة 50% على مجموعة من الملابس أو الأجهزة
+            الإلكترونية، وهو ما يعني أن السعر الجديد يعكس خصم حقيقي عن السعر
+            الأصلي للمنتج.
+          </p>
+          <p class="p-normal mb-4 text-slate-900">
+            العروض الترويجية غالبًا ما تعتمد على تقديم منتجات إضافية أو خدمات
+            مميزة كجزء من الصفقة مثل اشترى منتجًا واحصل على الآخر مجانًا أو احصل
+            على خصم على منتج إضافي عند شراء منتجين.
+          </p>
+          <p class="p-normal mb-4 text-slate-900">
+            الفرق الأساسي هنا هو أن التخفيضات تؤثر مباشرة على السعر النهائي
+            للمنتج، في حين أن العروض الترويجية تهدف إلى جذب العملاء من خلال
+            إضافة قيمة إضافية إلى عملية الشراء.
+          </p>
+
+          <h2 class="h3 mt-8 py-2 text-themeBlue">
+            كيفية طلب ترخيص منتجات&nbsp;
+          </h2>
+          <p class="p-normal mb-4 text-slate-900">
+            طلب معرفة ما هي تراخيص التخفيضات يجعلنا نعرف أن ترخيص للتخفيضات أو
+            العروض الترويجية في المملكة العربية السعودية يتم بسهولة من خلال
+            المنصات الإلكترونية التابعة لوزارة التجارة، حيث:
+          </p>
+          <p class="p-normal mb-4 text-slate-900">
+            يبدأ التاجر بالتسجيل في البوابة الإلكترونية للوزارة، ويمكنه تقديم
+            الطلب إلكترونيًا.
+          </p>
+          <p class="p-normal mb-4 text-slate-900">
+            ضرورة إحضار مجموعة من المستندات التجارية الاساسية والتي تشمل كلاً من
+            السجل التجاري وقائمة بالمنتجات التي سيتم تقديمها ضمن التخفيضات أو
+            العروض.بالإضافة إلى الأسعار القديمة والجديدة لتلك المنتجات.
+          </p>
+          <p class="p-normal mb-4 text-slate-900">
+            بعد تقديم الطلب يتم مراجعة البيانات والتأكد من صحتها ومدى توافقها مع
+            الشروط الموضوعة.
+          </p>
+          <p class="p-normal mb-4 text-slate-900">
+            بعد الموافقة على الطلب، يتم دفع الرسوم المطلوبة عبر وسائل الدفع
+            الإلكترونية المتاحة.
+          </p>
+          <p class="p-normal mb-4 text-slate-900">
+            ومن ثم يمنح التاجر تصريح معتمد يسمح له بتقديم التخفيضات أو العروض
+            الترويجية، وهذا التصريح يتم عرضه بشكل واضح للزبائن سواء في المتاجر
+            الفعلية أو عبر المواقع الإلكترونية لضمان الشفافية والمصداقية.
+          </p>
+
+          <h2 class="h3 mt-8 py-2 text-themeBlue">
+            هل توجد رسوم لتصريح التخفيضات&nbsp;
+          </h2>
+          <p class="p-normal mb-4 text-slate-900">
+            لا يتوقف فهم كيفية طلب ترخيص منتجات على معرفة الفرق بين العروض
+            الترويجية والتخفيضات، أو معرفة ما هي تراخيص التخفيضات ولكن هناك رسوم
+            مطلوبة للحصول على تصريح التخفيضات في المملكة العربية السعودية من
+            الضروري الإلمام بها، وهذه الرسوم تعتمد على عدة عوامل منها نوع
+            التخفيض ومدته وعدد المنتجات التي سيتم تضمينها في التخفيض،على سبيل
+            المثال قد تختلف الرسوم بين التخفيضات الشاملة التي تغطي جميع المنتجات
+            في المتجر والتخفيضات الجزئية التي تستهدف فقط جزءاً من المنتجات.
+          </p>
+          <p class="p-normal mb-4 text-slate-900">
+            حيث أن الرسوم تفرضها وزارة التجارة كجزء من إجراءات التصريح، وتدفع
+            إلكترونيًا عبر منصة الوزارة، ومن المهم أن يعرف التجار أن هذه الرسوم
+            تعد جزءًا من الالتزام التجاري لضمان تنظيم التخفيضات والعروض بطريقة
+            قانونية تتماشى مع معايير الشفافية والنزاهة، حيث بمجرد سداد الرسوم
+            والحصول على التصريح يكون التاجر مخولًا قانونيًا لتقديم التخفيضات
+            للزبائن دون التعرض لأي مخالفات.
+          </p>
+
+          <h2 class="h3 mt-8 py-2 text-themeBlue">
+            ما هي ضوابط إصدار تراخيص تخفيضات&nbsp;
+          </h2>
+          <p class="p-normal mb-4 text-slate-900">
+            وفي إطار التحدث عن ما هي تراخيص التخفيضات تفرض وزارة التجارة
+            السعودية مجموعة من الضوابط والقواعد التي يجب اتباعها للحصول على
+            تراخيص التخفيضات، ومن بين هذه الضوابط ما يلي:
+          </p>
+          <ul
+            class="list-disc pr-10"
+            role="list"
+            aria-label="what are offer promotion terms"
+          >
+            <li class="p-normal mb-4 text-slate-900">
+              يتعين على التجار تقديم المستندات الصحيحة مثل السجل التجاري الساري
+              المفعول وقائمة المنتجات التي سيتم تخفيض أسعارها.
+            </li>
+            <li class="p-normal mb-4 text-slate-900">
+              بالإضافة إلى ذلك يجب على التجار الالتزام بشروط وزارة التجارة بخصوص
+              مدة التخفيضات، وعدم تجاوز النسبة المئوية المسموح بها للتخفيض.
+            </li>
+            <li class="p-normal mb-4 text-slate-900">
+              كما يجب توضيح السعر القديم والجديد بشكل واضح على جميع المنتجات
+              المعروضة في التخفيضات.
+            </li>
+          </ul>
+          <p class="p-normal mb-4 text-slate-900">
+            الهدف من هذه الضوابط هو ضمان نزاهة العروض المقدمة وحماية حقوق
+            المستهلكين من أي عمليات غش أو تلاعب.
+          </p>
+          <p class="p-normal mb-4 text-slate-900">
+            تعمل الوزارة على مراجعة الطلبات المقدمة من التجار بشكل دقيق، ويتم
+            رفض أي طلبات لا تتوافق مع المعايير الموضوعة.
+          </p>
+
+          <h2 class="h3 mt-8 py-2 text-themeBlue">
+            ما هي شروط العروض الترويجية&nbsp;
+          </h2>
+          <p class="p-normal mb-4 text-slate-900">
+            معرفة ما هي تراخيص التخفيضات و العروض الترويجية تخضع أيضًا لشروط
+            محددة تفرضها وزارة التجارة في المملكة العربية السعودية، ومن بين هذه
+            الشروط ما يلي:
+          </p>
+          <ul
+            class="list-disc pr-10"
+            role="list"
+            aria-label="what are offers promotion terms"
+          >
+            <li class="p-normal mb-4 text-slate-900">
+              ضرورة تقديم خطة تسويقية واضحة توضح طبيعة العرض ومدته.
+            </li>
+
+            <li class="p-normal mb-4 text-slate-900">
+              بالإضافة إلى تحديد الفئة المستهدفة من العملاء.&nbsp;
+            </li>
+
+            <li class="p-normal mb-4 text-slate-900">
+              يجب أن تكون العروض الترويجية شفافة ومفهومة للمستهلك، حيث يجب توضيح
+              جميع التفاصيل المتعلقة بكيفية الاستفادة من العرض، مثل نسبة الخصم
+              أو المنتجات المجانية المقدمة.
+            </li>
+
+            <li class="p-normal mb-4 text-slate-900">
+              كما يجب أن تشمل العروض سياسة الإرجاع والاستبدال، بحيث يتم احترام
+              حقوق المستهلكين حتى في حالة الاستفادة من العرض.&nbsp;
+            </li>
+
+            <li class="p-normal mb-4 text-slate-900">
+              لا يسمح للعروض الترويجية بأن تكون مضللة أو غير واضحة وذلك لضمان
+              حماية المستهلكين.
+            </li>
+          </ul>
+
+          <h2 class="h3 mt-8 py-2 text-themeBlue">
+            مواسم التخفيضات في السعودية
+          </h2>
+          <p class="p-normal mb-4 text-slate-900">
+            تشمل المملكة العربية السعودية العديد من مواسم التخفيضات السنوية التي
+            تعد فرصًا كبيرة للتجار لتقديم عروض مميزة وجذب الزبائن، ومن بين هذه
+            المواسم الشهيرة هي:
+          </p>
+          <ul
+            class="list-disc pr-10"
+            role="list"
+            aria-label="saudian discounts seson"
+          >
+            <li class="p-normal mb-4 text-slate-900">
+              تخفيضات نهاية العام وتخفيضات الجمعة البيضاء، التي تشهد إقبالًا
+              كبير من المتسوقين.
+            </li>
+            <li class="p-normal mb-4 text-slate-900">
+              اليوم الوطني السعودي حيث تخضع هذه المواسم لقواعد تنظيمية صارمة من
+              قبل وزارة التجارة، حيث يتم إصدار تراخيص خاصة للتخفيضات خلال هذه
+              الفترات.
+            </li>
+            <li class="p-normal mb-4 text-slate-900">
+              وفي يوم التأسيس يتم تنظيم التخفيضات لضمان تقديم تخفيضات حقيقية
+              وحماية المستهلكين من أي تلاعب أو تضليل.
+            </li>
+          </ul>
+
+          <h2 class="h3 mt-8 py-2 text-themeBlue">
+            أبرز الخدمات المحاسبية من فريق أرباح
+          </h2>
+          <p class="p-normal mb-4 text-slate-900">
+            بعدما علمت ما هي تراخيص التخفيضات من المهم أن تتعرف على خدمات أرباح
+            حيث يعد من أهم&nbsp; المواقع التي تقدم خدمات مميزة للتجار
+            الإلكترونيين، حيث تتيح لهم إمكانية إدارة العروض والتخفيضات بشكل
+            إلكتروني وسهل، بالإضافة إلى الكثير من الخدمات الأخرى مثل:
+          </p>
+          <ul class="mr-10">
+            <li>
+              <h3 class="h5 mt-6 py-1 text-themeBlue">خدمات محاسبية</h3>
+              <p class="p-normal mb-4 text-slate-900">
+                قم بترقية إدارة خدماتك المحاسبية مع فريق أرباح المحاسبي المتخصص،
+                حيث نقدم لك حلولاً متكاملة تتيح لك تنظيم وتحديث جميع الجوانب
+                المحاسبية لشركتك بفعالية، مع خدمات محاسبية متطورة، حيث يمكنك
+                التركيز على النمو والتطوير بينما نتولى نحن جميع تفاصيل إدارة
+                الحسابات.
+              </p>
+            </li>
+
+            <li>
+              <h3 class="h5 mt-6 py-1 text-themeBlue">
+                مميزات الحصول على خدمات محاسبية من أرباح
+              </h3>
+              <ul
+                class="list-disc pr-10"
+                role="list"
+                aria-label="Benefits of Accounting Services"
+              >
+                <li class="p-normal mb-4 text-slate-900">
+                  فريق أرباح متخصص في إدارة جميع جوانب خدماتك المحاسبية، بدءًا
+                  من تسجيل المعاملات وحتى إعداد التقارير المالية.
+                </li>
+                <li class="p-normal mb-4 text-slate-900">
+                  دمج جميع جوانب المحاسبة في مكان واحد، مما يسهل تتبع البيانات
+                  وتحليلها بكفاءة.
+                </li>
+                <li class="p-normal mb-4 text-slate-900">
+                  توفير أدوات تحليل قوية تساعدك في فهم الأداء المالي لشركتك، مما
+                  يمكنّك من اتخاذ قرارات استراتيجية مبنية على بيانات دقيقة.
+                </li>
+                <li class="p-normal mb-4 text-slate-900">
+                  واجهة مستخدم بديهية تسهل على فريقك المحاسبي إدارة العمليات
+                  بشكل فعال وكفء.
+                </li>
+                <li class="p-normal mb-4 text-slate-900">
+                  فريق دعم متخصص متاح لمساعدتك في حل أي مشكلات أو استفسارات
+                  تتعلق بالخدمات المحاسبية، مما يضمن استمرارية عملك بدون انقطاع.
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <h3 class="h5 mt-6 py-1 text-themeBlue">
+                خدمات رقابة داخلية&nbsp;
+              </h3>
+              <p class="p-normal mb-4 text-slate-900">
+                يختص فريق أرباح بتقديم خدمات تصميم هياكل رقابة داخلية، لتحسين
+                الكفاءة الإدارية وتوزيع الأدوار بشكل فعّال، كما تساعد هذه
+                الخدمات في تحديد المهام والمسؤوليات، مما يقلل التداخل ويزيد
+                الإنتاجية، ويمكن المؤسسات من إدارة مواردها البشرية بفعالية أكبر.
+              </p>
+            </li>
+            <li>
+              <h3 class="h5 mt-6 py-1 text-themeBlue">
+                مميزات خدمات رقابة داخلية&nbsp;
+              </h3>
+              <ul
+                class="list-disc pr-10"
+                role="list"
+                aria-label="Benefits of Internal Control Services"
+              >
+                <li class="p-normal mb-4 text-slate-900">
+                  تعزز توزيع المهام والصلاحيات بشكل فعّال.
+                </li>
+                <li class="p-normal mb-4 text-slate-900">
+                  تقلل من التداخل بين الأدوار، مما يؤدي إلى رفع مستوى الإنتاجية.
+                </li>
+                <li class="p-normal mb-4 text-slate-900">
+                  توفر هيكلًا واضحًا يسهل فهم الأدوار والمسؤوليات.
+                </li>
+                <li class="p-normal mb-4 text-slate-900">
+                  تساعد المؤسسات على إدارة فرق العمل بكفاءة أكبر.
+                </li>
+                <li class="p-normal mb-4 text-slate-900">
+                  تساهم في تحسين عملية اتخاذ القرارات من خلال وضوح المسؤوليات.
+                </li>
+              </ul>
+            </li>
+          </ul>
+
+          <h4 class="h5 mb-4 mt-8 text-slate-900">
+            تعرف على كافة الخدمات المحاسبية التي يقدمها فريق
+            <a href="https://arbah.me/" class="mx-1 text-themeSky underline"
+              >أرباح</a
+            >
+            ، والتي تساعدك على فهم ما هي تراخيص التخفيضات وكيفية إنهائها، وكيفية
+            طلب هذه التراخيص والرسوم المتعلقة بها.
+          </h4>
+        </section>
+        <!-- /main content  -->
+        <!--/ Post Content-->
+        <!--Author-->
+        <footer
+          class="mt-20 flex w-full items-center gap-2 bg-themeLightBlue p-2"
+          role="contentinfo"
+        >
+          <img
+            class="size-10 rounded-full"
+            src="./assets/image/blog/bolg_team.png"
+            alt="Avatar of Author"
+          />
+          <p class="h5 text-themeBlue" aria-label="Author">فريق ارباح</p>
+        </footer>
+        <!--/Author-->
+      </article>
+    </div>
+
+    <!--   Scroll Top Button  -->
+    <button
+      class="btn-toggle-round scroll-top js-scroll-top fixed bottom-24 right-7 box-border size-8 md:size-10 lg:size-12"
+      type="button"
+      title="Scroll to top"
+    >
+      <svg
+        class="progress-circle"
+        width="100%"
+        height="100%"
+        viewBox="-1 -1 102 102"
+      >
+        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+      </svg>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="icon icon-tabler icon-tabler-arrow-up"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="#1c2373"
+        fill="none"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+        <line x1="12" y1="5" x2="12" y2="19" />
+        <line x1="18" y1="11" x2="12" y2="5" />
+        <line x1="6" y1="11" x2="12" y2="5" />
+      </svg>
+    </button>
+
+    <!--   Blog Cards  -->
+    <div class="mb-20 bg-slate-100 px-6 py-10 sm:px-[10%] 2xl:px-0">
+      <div
+        class="mx-auto max-w-5xl 2xl:container"
+        role="region"
+        aria-labelledby="read-more-title"
+      >
+        <h2 id="read-more-title" class="h4 mb-6 text-center text-themeBlue">
+          أقراء المزيد
+        </h2>
+        <div
+          class="flex w-full flex-col items-center justify-between gap-4 lg:flex-row"
+        >
+          <!-- Blog Card -->
+          <div
+            class="relative rounded-lg bg-white shadow-lg"
+            data-aos="fade-up"
+            role="article"
+            aria-labelledby="blog-card-title"
+            aria-describedby="blog-card-description"
+          >
+            <a
+              href="./blog.html"
+              class="flex size-full flex-col justify-between"
+              aria-label="اقرأ المزيد عن: ما هي تراخيص التخفيضات"
+            >
+              <!-- Image && Title -->
+              <div>
+                <!-- Image -->
+                <div
+                  class="min-h-[220px] rounded-t-lg"
+                  role="img"
+                  aria-label="صورة لمدونة بعنوان ما هي تراخيص التخفيضات"
+                  style="
+                    background-image: url('./assets/image/blog/blog_banner.jpg');
+                    background-position: right bottom;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                  "
+                ></div>
+                <!-- Title -->
+                <h1
+                  id="blog-card-title"
+                  class="h5 line-clamp-2 bg-white px-4 py-2 text-themeBlue"
+                >
+                  ما هي تراخيص التخفيضات
+                </h1>
+              </div>
+
+              <!-- Date && Read More -->
+              <div
+                id="blog-card-description"
+                class="w-full min-w-max rounded-b-lg bg-white px-4 py-1 text-gray-500"
+              >
+                <hr />
+                <div class="flex justify-between">
+                  <!-- Date -->
+                  <span
+                    class="p-extra-small"
+                    aria-label="تاريخ النشر: نوفمبر 7, 2024"
+                  >
+                    نوفمبر 7, 2024
+                  </span>
+                  <!-- Read More -->
+                  <span class="p-extra-small" aria-hidden="true"
+                    >قراءة المزيد. . .</span
+                  >
+                </div>
+              </div>
+              <!-- Category Absolute -->
+              <span
+                title="مقالات عامة"
+                class="p-small absolute right-2 top-2 line-clamp-1 max-w-[100px] rounded-full bg-themeGreen px-2 py-1 text-themeBlue"
+                role="note"
+                aria-label="التصنيف: مقالات عامة"
+              >
+                مقالات عامة
+              </span>
+              <!-- Author Absolute -->
+              <span
+                title="فريق أربَاحْ"
+                class="p-small absolute left-2 top-2 line-clamp-1 max-w-[100px] rounded-full bg-themeGreen px-2 py-1 text-themeBlue"
+                role="note"
+                aria-label="الكاتب: فريق أربَاحْ"
+              >
+                فريق أربَاحْ
+              </span>
+            </a>
+          </div>
+
+          <!-- Blog Card -->
+          <div
+            class="relative rounded-lg bg-white shadow-lg"
+            data-aos="fade-up"
+            role="article"
+            aria-labelledby="blog-card-title"
+            aria-describedby="blog-card-description"
+          >
+            <a
+              href="./blog.html"
+              class="flex size-full flex-col justify-between"
+              aria-label="اقرأ المزيد عن: ما هي تراخيص التخفيضات"
+            >
+              <!-- Image && Title -->
+              <div>
+                <!-- Image -->
+                <div
+                  class="min-h-[220px] rounded-t-lg"
+                  role="img"
+                  aria-label="صورة لمدونة بعنوان ما هي تراخيص التخفيضات"
+                  style="
+                    background-image: url('./assets/image/blog/blog_banner.jpg');
+                    background-position: right bottom;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                  "
+                ></div>
+                <!-- Title -->
+                <h1
+                  id="blog-card-title"
+                  class="h5 line-clamp-2 bg-white px-4 py-2 text-themeBlue"
+                >
+                  ما هي تراخيص التخفيضات
+                </h1>
+              </div>
+
+              <!-- Date && Read More -->
+              <div
+                id="blog-card-description"
+                class="w-full min-w-max rounded-b-lg bg-white px-4 py-1 text-gray-500"
+              >
+                <hr />
+                <div class="flex justify-between">
+                  <!-- Date -->
+                  <span
+                    class="p-extra-small"
+                    aria-label="تاريخ النشر: نوفمبر 7, 2024"
+                  >
+                    نوفمبر 7, 2024
+                  </span>
+                  <!-- Read More -->
+                  <span class="p-extra-small" aria-hidden="true"
+                    >قراءة المزيد. . .</span
+                  >
+                </div>
+              </div>
+              <!-- Category Absolute -->
+              <span
+                title="مقالات عامة"
+                class="p-small absolute right-2 top-2 line-clamp-1 max-w-[100px] rounded-full bg-themeGreen px-2 py-1 text-themeBlue"
+                role="note"
+                aria-label="التصنيف: مقالات عامة"
+              >
+                مقالات عامة
+              </span>
+              <!-- Author Absolute -->
+              <span
+                title="فريق أربَاحْ"
+                class="p-small absolute left-2 top-2 line-clamp-1 max-w-[100px] rounded-full bg-themeGreen px-2 py-1 text-themeBlue"
+                role="note"
+                aria-label="الكاتب: فريق أربَاحْ"
+              >
+                فريق أربَاحْ
+              </span>
+            </a>
+          </div>
+
+          <!-- Blog Card -->
+          <div
+            class="relative rounded-lg bg-white shadow-lg"
+            data-aos="fade-up"
+            role="article"
+            aria-labelledby="blog-card-title"
+            aria-describedby="blog-card-description"
+          >
+            <a
+              href="./blog.html"
+              class="flex size-full flex-col justify-between"
+              aria-label="اقرأ المزيد عن: ما هي تراخيص التخفيضات"
+            >
+              <!-- Image && Title -->
+              <div>
+                <!-- Image -->
+                <div
+                  class="min-h-[220px] rounded-t-lg"
+                  role="img"
+                  aria-label="صورة لمدونة بعنوان ما هي تراخيص التخفيضات"
+                  style="
+                    background-image: url('./assets/image/blog/blog_banner.jpg');
+                    background-position: right bottom;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                  "
+                ></div>
+                <!-- Title -->
+                <h1
+                  id="blog-card-title"
+                  class="h5 line-clamp-2 bg-white px-4 py-2 text-themeBlue"
+                >
+                  ما هي تراخيص التخفيضات
+                </h1>
+              </div>
+
+              <!-- Date && Read More -->
+              <div
+                id="blog-card-description"
+                class="w-full min-w-max rounded-b-lg bg-white px-4 py-1 text-gray-500"
+              >
+                <hr />
+                <div class="flex justify-between">
+                  <!-- Date -->
+                  <span
+                    class="p-extra-small"
+                    aria-label="تاريخ النشر: نوفمبر 7, 2024"
+                  >
+                    نوفمبر 7, 2024
+                  </span>
+                  <!-- Read More -->
+                  <span class="p-extra-small" aria-hidden="true"
+                    >قراءة المزيد. . .</span
+                  >
+                </div>
+              </div>
+              <!-- Category Absolute -->
+              <span
+                title="مقالات عامة"
+                class="p-small absolute right-2 top-2 line-clamp-1 max-w-[100px] rounded-full bg-themeGreen px-2 py-1 text-themeBlue"
+                role="note"
+                aria-label="التصنيف: مقالات عامة"
+              >
+                مقالات عامة
+              </span>
+              <!-- Author Absolute -->
+              <span
+                title="فريق أربَاحْ"
+                class="p-small absolute left-2 top-2 line-clamp-1 max-w-[100px] rounded-full bg-themeGreen px-2 py-1 text-themeBlue"
+                role="note"
+                aria-label="الكاتب: فريق أربَاحْ"
+              >
+                فريق أربَاحْ
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQ -->
+    <section
+      class="relative min-h-[calc(100vh-90px)] overflow-hidden bg-slate-100 px-6 py-10 sm:px-[10%] lg:flex lg:items-center lg:justify-center"
+      data-aos="fade-in"
+      data-aos-offset="-10"
+      aria-labelledby="faq-heading"
+      role="region"
+    >
+      <div class="w-full 2xl:container 2xl:mx-auto">
+        <h2
+          class="h5 text-center text-themeBlue md:absolute md:left-1/2 md:top-10 md:-translate-x-1/2"
+          id="faq-heading"
+        >
+          كل ما تحتاج معرفته - الأسئلة الشائعة
+        </h2>
+        <div
+          class="mx-auto mt-8 grid max-h-[80%] grid-cols-1 gap-8 transition-all sm:grid-cols-2"
+          role="list"
+        >
+          <!-- card -->
+          <div
+            class="group h-fit transform rounded-lg border bg-white px-4 py-2 shadow-md transition hover:scale-110"
+            role="listitem"
+            aria-labelledby="faq-question-1"
+            aria-describedby="faq-answer-1"
+          >
+            <h3
+              class="p-normal line-clamp-1 text-gray-700 group-hover:line-clamp-none"
+              id="faq-question-1"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="mr-2 inline-block size-6 transition-all duration-150 group-hover:-rotate-90"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 19.5 8.25 12l7.5-7.5"
+                />
+              </svg>
+              ما الفرق بين شركة أرباح والمحاسب التقليدي؟
+            </h3>
+            <p
+              class="p-small mt-2 line-clamp-3 min-h-12 text-gray-500 transition-all group-hover:line-clamp-none sm:line-clamp-2"
+              id="faq-answer-1"
+            >
+              مع أرباح، تحصل على فريق محاسبي محترف يضم خبراء في مختلف مجالات
+              المحاسبة، مما يوفر لك خدمات شاملة بتكلفة أقل من تكلفة تعيين محاسب
+              واحد بدوام كامل. نحن نعمل على ضمان الامتثال، الدقة، والكفاءة في
+              إدارة عملياتك المحاسبية.
+            </p>
+          </div>
+
+          <!-- card -->
+          <div
+            class="group h-fit transform rounded-lg border bg-white px-4 py-2 shadow-md transition hover:scale-110"
+            role="listitem"
+            aria-labelledby="faq-question-2"
+            aria-describedby="faq-answer-2"
+          >
+            <h3
+              class="p-normal line-clamp-1 text-gray-700 group-hover:line-clamp-none"
+              id="faq-question-2"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="mr-2 inline-block size-6 transition-all duration-150 group-hover:-rotate-90"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 19.5 8.25 12l7.5-7.5"
+                />
+              </svg>
+              هل تقدمون نظامًا محاسبيًا خاصًا بكم؟
+            </h3>
+            <p
+              class="p-small mt-2 line-clamp-3 min-h-12 text-gray-500 transition-all group-hover:line-clamp-none sm:line-clamp-2"
+              id="faq-answer-2"
+            >
+              نحن لسنا شركة برمجيات أو SaaS، ولكننا نمتلك شبكة واسعة من الشراكات
+              مع أفضل مقدمي البرامج والأنظمة المحاسبية. هذا يمكننا من تقديم
+              خدمات محاسبية متكاملة ومتوافقة مع احتياجات نشاطك التجاري.
+            </p>
+          </div>
+
+          <!-- card -->
+          <div
+            class="group h-fit transform rounded-lg border bg-white px-4 py-2 shadow-md transition hover:scale-110"
+            role="listitem"
+            aria-labelledby="faq-question-3"
+            aria-describedby="faq-answer-3"
+          >
+            <h3
+              class="p-normal line-clamp-1 text-gray-700 group-hover:line-clamp-none"
+              id="faq-question-3"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="mr-2 inline-block size-6 transition-all duration-150 group-hover:-rotate-90"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 19.5 8.25 12l7.5-7.5"
+                />
+              </svg>
+              ما الفائدة من استخدام خدمات أرباح؟
+            </h3>
+            <p
+              class="p-small mt-2 line-clamp-3 min-h-12 text-gray-500 transition-all group-hover:line-clamp-none sm:line-clamp-2"
+              id="faq-answer-3"
+            >
+              باختيار أرباح، تحصل على شريك محاسبي يعتمد على التكنولوجيا الحديثة،
+              الكفاءة، والخبرة لضمان إدارة مثالية لعملياتك المالية والمحاسبية،
+              مما يسمح لك بالتركيز على تنمية نشاطك التجاري.
+            </p>
+          </div>
+
+          <!-- card -->
+          <div
+            class="group h-fit transform rounded-lg border bg-white px-4 py-2 shadow-md transition hover:scale-110"
+            role="listitem"
+            aria-labelledby="faq-question-4"
+            aria-describedby="faq-answer-4"
+          >
+            <h3
+              class="p-normal line-clamp-1 text-gray-700 group-hover:line-clamp-none"
+              id="faq-question-4"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="mr-2 inline-block size-6 transition-all duration-150 group-hover:-rotate-90"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 19.5 8.25 12l7.5-7.5"
+                />
+              </svg>
+              هل أنتم شركة سعودية؟
+            </h3>
+            <p
+              class="p-small mt-2 line-clamp-3 min-h-12 text-gray-500 transition-all group-hover:line-clamp-none sm:line-clamp-2"
+              id="faq-answer-4"
+            >
+              نعم، نحن جزء من مجموعة شركات سعودية تعمل تحت مظلة شركة موجة
+              الوسائط. نقدم خدماتنا في جميع أنحاء المملكة العربية السعودية،
+              بالإضافة إلى فروعنا في الكويت والإمارات العربية المتحدة.
+            </p>
+          </div>
+        </div>
+        <p
+          class="p-extra-small mt-8 text-center text-gray-700 underline md:absolute md:bottom-10 md:left-1/2 md:-translate-x-1/2"
+        >
+          <a href="./FAQ.html"> المزيد من الاسئلة </a>
+        </p>
+      </div>
+    </section>
+
+    <!-- contact form & info section  -->
+    <section
+      class="relative -mb-px flex min-h-[calc(100svh)] items-center justify-center"
+      aria-labelledby="contact-us-heading"
+      role="region"
+      id="contact-us-section"
+    >
+      <h2 class="sr-only" id="contact-us-heading">تواصل معنا</h2>
+      <div
+        class="absolute left-0 top-0 hidden h-[40%] w-full overflow-hidden bg-cover bg-[50%] bg-no-repeat lg:block"
+      >
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2706.818885228106!2d46.8064832739359!3d24.692441786543665!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f076b9f00817b%3A0x44614f2741d977db!2ssky%20mall!5e0!3m2!1sen!2seg!4v1735985198660!5m2!1sen!2seg"
+          width="100%"
+          height="100%"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          title="Arbah Location on the map"
+        ></iframe>
+      </div>
+      <div
+        class="bottom-0 left-0 w-full bg-themeBlue py-6 lg:absolute lg:h-[60%]"
+      >
+        <div
+          class="mx-auto grid w-[80%] grid-cols-1 gap-4 rounded-lg bg-white p-8 pb-6 2xl:container lg:-mt-[5%] lg:grid-cols-2"
+        >
+          <!-- form -->
+          <form
+            id="contact-us-form"
+            class="flex flex-col gap-6"
+            aria-labelledby="contact-form-heading"
+            role="form"
+          >
+            <h2 id="contact-form-heading" class="sr-only">Contact Us Form</h2>
+
+            <div class="relative" data-te-input-wrapper-init>
+              <input
+                type="text"
+                class="peer-focus:text-primary motion-reduce:transition-nonex p-normal peer block min-h-[auto] w-full rounded border-2 bg-transparent px-3 py-[0.32rem] leading-[1.6] text-themeBlue outline-themeGreen transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100"
+                id="exampleInput90"
+                aria-labelledby="name-label"
+                required
+              />
+              <label
+                class="p-normal pointer-events-none absolute right-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[2rem] peer-focus:scale-y-[0.8] peer-focus:font-bold peer-focus:text-themeBlue peer-data-[te-input-state-active]:-translate-y-[1.9rem] peer-data-[te-input-state-active]:scale-y-[0.8] motion-reduce:transition-none"
+                for="exampleInput90"
+                id="name-label"
+              >
+                الأسم
+              </label>
+            </div>
+
+            <div class="flex flex-col gap-6 lg:flex-row">
+              <div class="relative" data-te-input-wrapper-init>
+                <input
+                  type="email"
+                  class="p-normal peer block min-h-[auto] w-full rounded border-2 bg-transparent px-3 py-[0.32rem] leading-[1.6] text-themeBlue outline-themeGreen transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none"
+                  id="exampleInput91"
+                  aria-labelledby="email-label"
+                  required
+                />
+                <label
+                  class="p-normal pointer-events-none absolute right-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[2rem] peer-focus:scale-y-[0.8] peer-focus:font-bold peer-focus:text-themeBlue peer-data-[te-input-state-active]:-translate-y-[1.9rem] peer-data-[te-input-state-active]:scale-y-[0.8] motion-reduce:transition-none"
+                  for="exampleInput91"
+                  id="email-label"
+                >
+                  البريد الألكتروني
+                </label>
+              </div>
+
+              <div class="relative" data-te-input-wrapper-init>
+                <input
+                  type="text"
+                  class="p-normal peer block min-h-[auto] w-full rounded border-2 bg-transparent px-3 py-[0.32rem] leading-[1.6] text-themeBlue outline-themeGreen transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none"
+                  id="exampleInput81"
+                  aria-labelledby="phone-label"
+                  required
+                />
+                <label
+                  class="p-normal pointer-events-none absolute right-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[2rem] peer-focus:scale-y-[0.8] peer-focus:font-bold peer-focus:text-themeBlue peer-data-[te-input-state-active]:-translate-y-[1.9rem] peer-data-[te-input-state-active]:scale-y-[0.8] motion-reduce:transition-none"
+                  for="exampleInput81"
+                  id="phone-label"
+                >
+                  رقم الجوال
+                </label>
+              </div>
+            </div>
+
+            <div class="relative" data-te-input-wrapper-init>
+              <textarea
+                class="p-normal peer block min-h-[auto] w-full resize-none rounded border-2 bg-transparent px-3 py-[0.32rem] leading-[1.6] text-themeBlue outline-themeGreen transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none"
+                id="exampleFormControlTextarea1"
+                rows="3"
+                aria-labelledby="message-label"
+                required
+              ></textarea>
+              <label
+                for="exampleFormControlTextarea1"
+                class="p-normal pointer-events-none absolute right-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[2rem] peer-focus:scale-y-[0.8] peer-focus:font-bold peer-focus:text-themeBlue peer-data-[te-input-state-active]:-translate-y-[1.9rem] peer-data-[te-input-state-active]:scale-y-[0.8] motion-reduce:transition-none"
+                id="message-label"
+              >
+                نص الرسالة
+              </label>
+            </div>
+
+            <button
+              type="submit"
+              class="p-normal block w-full rounded-md bg-themeBlue px-6 py-3 font-bold leading-normal text-white transition-colors duration-150 hover:bg-indigo-700"
+              aria-label="Send message"
+            >
+              أرسال
+            </button>
+          </form>
+
+          <!-- contact info -->
+          <div
+            class="flex flex-wrap justify-center gap-4"
+            role="region"
+            aria-labelledby="contact-info-heading"
+          >
+            <h2 id="contact-info-heading" class="sr-only">
+              Contact Information
+            </h2>
+
+            <!-- card: Email -->
+            <div
+              class="flex min-w-max max-w-full flex-1 items-start gap-2"
+              role="contentinfo"
+            >
+              <div class="text-primary rounded-md bg-sky-200 p-4">
+                <img
+                  src="./assets/image/icons/email_icon.svg"
+                  alt="Email Icon"
+                  class="size-6"
+                  aria-hidden="true"
+                />
+              </div>
+              <div class="p-normal">
+                <p class="mb-2 text-themeBlue">البريد الألكتروني:</p>
+                <a
+                  class="inline-block text-neutral-500"
+                  href="mailto:info@arbah.sa"
+                  aria-label="Send email to info@arbah.sa"
+                >
+                  info@arbah.sa
+                </a>
+              </div>
+            </div>
+
+            <!-- card: Address -->
+            <div
+              class="flex min-w-max max-w-full flex-1 items-start gap-2"
+              role="contentinfo"
+            >
+              <div class="text-primary rounded-md bg-sky-200 p-4">
+                <img
+                  src="./assets/image/icons/address_icon.svg"
+                  alt="Address Icon"
+                  class="size-6"
+                  aria-hidden="true"
+                />
+              </div>
+              <div class="p-normal">
+                <p class="mb-2 text-themeBlue">العنوان:</p>
+                <p
+                  class="line-clamp-3 text-neutral-500"
+                  title="الرياض - حي الروابي - الطريق الدائري الشرقي مخرج 15 تقاطع طريق الأمير سعد بن عبدالرحمن الأول مع الإمام الشافعي مبنى سكاي مول - مركز نيلوفز للأعمال - الدور الأول"
+                  aria-label="Address: Riyadh - Al Rawabi District - Eastern Ring Road, Exit 15, Intersection of Prince Saad Bin Abdulrahman and Imam Al-Shafi'i Road, Sky Mall Building - Nilufaz Business Center - First Floor"
+                >
+                  الرياض - حي الروابي
+                </p>
+              </div>
+            </div>
+
+            <!-- card: Landline phone -->
+            <div
+              class="flex min-w-max max-w-full flex-1 items-start gap-2"
+              role="contentinfo"
+            >
+              <div class="text-primary rounded-md bg-sky-200 p-4">
+                <img
+                  src="./assets/image/icons/landline_phone_icon.svg"
+                  alt="Landline phone icon"
+                  class="size-6"
+                  aria-hidden="true"
+                />
+              </div>
+              <div class="p-normal">
+                <p class="mb-2 text-themeBlue">للأتصال:</p>
+                <a
+                  class="inline-block text-neutral-500"
+                  href="tel:+966920031093"
+                  style="direction: ltr"
+                  aria-label="Call the landline number +966 92 003 1093"
+                >
+                  +966 92 003 1093
+                </a>
+              </div>
+            </div>
+
+            <!-- card: WhatsApp -->
+            <div
+              class="flex min-w-max max-w-full flex-1 items-start gap-2"
+              role="contentinfo"
+            >
+              <div class="text-primary rounded-md bg-sky-200 p-4">
+                <img
+                  src="./assets/image/icons/whatsapp_icon_dark.svg"
+                  alt="WhatsApp Icon"
+                  class="size-6"
+                  aria-hidden="true"
+                />
+              </div>
+              <div class="p-normal">
+                <p class="mb-2 text-themeBlue">واتس اب:</p>
+                <a
+                  class="inline-block text-neutral-500"
+                  style="direction: ltr"
+                  href="https://api.whatsapp.com/send/?phone=966553510931&text&type=phone_number&app_absent=0"
+                  aria-label="Send message on WhatsApp to +966 55 351 0931"
+                >
+                  +966 55 351 0931
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer section -->
+    <footer
+      class="relative flex flex-col items-center justify-between bg-themeBlue px-6 pb-1 pt-32 sm:px-[10%]"
+      role="contentinfo"
+      aria-labelledby="footer-heading"
+    >
+      <h2 id="footer-heading" class="sr-only">Footer Section</h2>
+
+      <div
+        class="flex w-full flex-col items-center justify-center gap-4 2xl:container lg:flex-row lg:justify-between"
+      >
+        <!-- right side -->
+        <div>
+          <a href="./home.html">
+            <img
+              src="./assets/image/logo_white.png"
+              alt="أربَاحْ"
+              class="mx-auto max-w-[15rem] lg:mx-0"
+            />
+          </a>
+          <h2 class="h4 mt-4 pr-8 text-center text-themeGreen lg:text-start">
+            حِينَما تتحدَّثُ الأرقَامُ
+          </h2>
+        </div>
+
+        <!-- center side -->
+        <div class="p-small hidden gap-4 text-themeLightBlue lg:flex">
+          <ul
+            class="flex flex-col items-start gap-4"
+            role="navigation"
+            aria-label="Footer Navigation"
+          >
+            <li
+              class="group relative cursor-pointer whitespace-nowrap rounded-sm"
+              role="menuitem"
+            >
+              <a href="./home.html">الرئيسية</a>
+            </li>
+            <li
+              class="group relative cursor-pointer whitespace-nowrap rounded-sm"
+              role="menuitem"
+            >
+              <a href="./about.html">من نحن</a>
+            </li>
+            <li
+              class="group relative cursor-pointer whitespace-nowrap rounded-sm"
+              role="menuitem"
+            >
+              <a href="./contact.html">تواصل معنا</a>
+            </li>
+            <li
+              class="group relative cursor-pointer whitespace-nowrap rounded-sm"
+              role="menuitem"
+            >
+              <a href="./contact.html">المدونة</a>
+            </li>
+          </ul>
+          <ul
+            class="flex flex-col items-start gap-4"
+            role="navigation"
+            aria-label="Footer Services"
+          >
+            <li
+              class="group relative cursor-pointer whitespace-nowrap rounded-sm"
+              role="menuitem"
+            >
+              <a href="./service.html">مسك الدفاتر</a>
+            </li>
+            <li
+              class="group relative cursor-pointer whitespace-nowrap rounded-sm"
+              role="menuitem"
+            >
+              <a href="./service2.html">المراجعة و التدقيق</a>
+            </li>
+            <li
+              class="group relative cursor-pointer whitespace-nowrap rounded-sm"
+              role="menuitem"
+            >
+              <a href="./service3.html">تشغيل الانظمة المحاسبية</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- left side: social media -->
+        <div
+          class="max-w-sm rounded-lg border-2 border-gray-300 bg-slate-100 p-4 text-lg"
+          aria-labelledby="social-media-heading"
+        >
+          <h3 id="social-media-heading" class="p-small mb-2 px-2 text-center">
+            تابعنا
+          </h3>
+          <div class="flex flex-wrap justify-center gap-2">
+            <a href="#" aria-label="Visit Facebook">
+              <img
+                src="./assets/image/icons/facebook.png"
+                class="w-8 lg:w-10"
+                alt="Facebook"
+              />
+            </a>
+            <a href="#" aria-label="Visit Instagram">
+              <img
+                src="./assets/image/icons/instagram.png"
+                class="w-8 lg:w-10"
+                alt="Instagram"
+              />
+            </a>
+            <a href="#" aria-label="Visit LinkedIn">
+              <img
+                src="./assets/image/icons/linkedin.png"
+                class="w-8 lg:w-10"
+                alt="LinkedIn"
+              />
+            </a>
+            <a href="#" aria-label="Visit Twitter">
+              <img
+                src="./assets/image/icons/x.png"
+                class="w-8 lg:w-10"
+                alt="X Twitter"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- footer bottom section -->
+      <div
+        class="w-full py-4 text-xs font-semibold text-gray-100 2xl:container sm:text-sm"
+      >
+        <hr />
+        <div class="flex items-center justify-between">
+          <p>جميع الحقوق محفوظة © 2025</p>
+          <div
+            class="flex gap-2 lg:gap-4"
+            role="navigation"
+            aria-label="Footer legal links"
+          >
+            <a href="./404.html" class="">الشروط والأحكام</a>
+            |
+            <a href="./404.html" class="">سياسة الخصوصية</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- WhatsApp contact button -->
+    <a
+      href="https://api.whatsapp.com/send/?phone=966553510931&text&type=phone_number&app_absent=0"
+      target="_blank"
+      class="fixed bottom-6 right-6 box-border size-10 animate-bounce cursor-pointer rounded-full border border-themeGreen bg-themeBlue p-1 transition-all duration-300 hover:-translate-y-4 hover:animate-none hover:shadow-xl hover:shadow-gray-900 md:size-12 md:p-2 lg:size-14 lg:p-3"
+      role="button"
+      aria-label="Contact us on WhatsApp"
+    >
+      <!-- <i class="uil uil-arrow-up-right absolute text-[3.5rem]"></i> -->
+      <img
+        src="./assets/image/icons/whatsapp.png"
+        class="size-full"
+        alt="WhatsApp logo"
+      />
+    </a>
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="./assets/js/blog.js"></script>
+  </body>
+</html>

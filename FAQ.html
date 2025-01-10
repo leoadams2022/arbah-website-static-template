@@ -1,0 +1,1247 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>أربَاحْ</title>
+    <link rel="stylesheet" href="./assets/css/output.css" />
+    <link rel="stylesheet" href="./assets/css/aos.css" />
+
+    <link rel="icon" href="./assets/image/favicon.png" type="image/x-icon" />
+  </head>
+  <body class="">
+    <!-- headr  -->
+    <header
+      class="theme-header-graper sticky left-0 top-0 z-50 h-[90px] pt-[40px] transition-all duration-300"
+      role="banner"
+    >
+      <nav
+        class="flex h-full items-center justify-between px-6 py-4 2xl:container sm:px-[10%] 2xl:mx-auto 2xl:px-0"
+        role="navigation"
+        aria-label="Main Navigation"
+      >
+        <!-- Logo -->
+        <a
+          href="./home.html"
+          class="inline-block w-[100px] sm:w-[130px] sm:flex-shrink-0"
+          aria-label="Homepage"
+        >
+          <img
+            class="w-full"
+            src="./assets/image/logo_blue.svg"
+            alt="أربَاحْ"
+          />
+        </a>
+
+        <!-- Navigation Links -->
+        <div class="flex items-center gap-4">
+          <ul
+            id="navigation-ul"
+            class="hidden items-center justify-between gap-4 font-bold text-blue-950 lg:flex"
+            role="menu"
+            aria-label="Primary Navigation"
+          >
+            <li
+              class="group pointer-events-none relative cursor-pointer whitespace-nowrap rounded-sm p-2 transition-colors duration-150 hover:bg-gray-200"
+              role="menuitem"
+            >
+              <div class="pointer-events-auto w-full">
+                <a href="./home.html" class="inline-block w-full"> الرئيسية </a>
+              </div>
+            </li>
+            <li
+              class="contain-sub-menu group relative cursor-pointer whitespace-nowrap rounded-sm p-2 transition-colors duration-150 hover:bg-gray-200"
+              role="menuitem"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <span>خدماتنا</span>
+              <!-- sub menu -->
+              <ul
+                class="sub-menu absolute right-0 top-full hidden max-w-max rounded-md bg-white px-4 py-2 shadow-lg group-hover:block"
+                role="menu"
+                aria-label="Our Services"
+              >
+                <li
+                  class="group pointer-events-none relative cursor-pointer whitespace-nowrap rounded-sm p-2 transition-colors duration-150 hover:bg-gray-200"
+                  role="menuitem"
+                >
+                  <div class="pointer-events-auto w-full">
+                    <a href="./service.html" class="inline-block w-full"
+                      >مسك الدفاتر</a
+                    >
+                  </div>
+                </li>
+                <li
+                  class="group pointer-events-none relative cursor-pointer whitespace-nowrap rounded-sm p-2 transition-colors duration-150 hover:bg-gray-200"
+                  role="menuitem"
+                >
+                  <div class="pointer-events-auto w-full">
+                    <a href="./service2.html" class="inline-block w-full"
+                      >المراجعة و التدقيق</a
+                    >
+                  </div>
+                </li>
+                <li
+                  class="group pointer-events-none relative cursor-pointer whitespace-nowrap rounded-sm p-2 transition-colors duration-150 hover:bg-gray-200"
+                  role="menuitem"
+                >
+                  <div class="pointer-events-auto w-full">
+                    <a href="./service3.html" class="inline-block w-full"
+                      >تشغيل الانظمة المحاسبية</a
+                    >
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li
+              class="group pointer-events-none relative cursor-pointer whitespace-nowrap rounded-sm p-2 transition-colors duration-150 hover:bg-gray-200"
+              role="menuitem"
+            >
+              <div class="pointer-events-auto w-full">
+                <a href="./about.html" class="inline-block w-full">من نحن</a>
+              </div>
+            </li>
+            <li
+              class="group pointer-events-none relative cursor-pointer whitespace-nowrap rounded-sm p-2 transition-colors duration-150 hover:bg-gray-200"
+              role="menuitem"
+            >
+              <div class="pointer-events-auto w-full">
+                <a href="./contact.html" class="inline-block w-full"
+                  >تواصل معنا</a
+                >
+              </div>
+            </li>
+            <li
+              class="group pointer-events-none relative cursor-pointer whitespace-nowrap rounded-sm p-2 transition-colors duration-150 hover:bg-gray-200"
+              role="menuitem"
+            >
+              <div class="pointer-events-auto w-full">
+                <a href="./blogs.html" class="inline-block w-full">المدونة</a>
+              </div>
+            </li>
+          </ul>
+          <!-- Try Now Button -->
+          <div class="hidden lg:block">
+            <a
+              href="./freeConsultation.html"
+              class="p-normal group relative whitespace-nowrap rounded-lg px-2 py-1 text-themeBlue"
+              aria-label="Request Free Consultation"
+            >
+              أستشارة مجانية
+              <span
+                class="absolute inset-0 -z-10 block size-full rounded-lg bg-gradient-to-r from-themeGreen via-themeGreen/60 to-themeGreen opacity-100 transition duration-300 group-hover:opacity-0"
+              ></span>
+              <span
+                class="absolute inset-0 -z-10 block size-full rounded-lg bg-gradient-to-r from-themeGreen/60 via-themeGreen to-themeGreen/60 opacity-0 transition duration-300 group-hover:opacity-100"
+              ></span>
+            </a>
+          </div>
+          <div class="flex items-center gap-1 lg:hidden">
+            <!-- Try Now Button -->
+            <a
+              href="./freeConsultation.html"
+              class="group relative whitespace-nowrap rounded-lg px-2 py-1 text-xs text-themeBlue md:text-sm md:font-semibold"
+              aria-label="Request Free Consultation"
+            >
+              أستشارة مجانية
+              <span
+                class="absolute inset-0 -z-10 block size-full rounded-lg bg-gradient-to-r from-themeGreen via-themeGreen/60 to-themeGreen opacity-100 transition duration-300 group-hover:opacity-0"
+              ></span>
+              <span
+                class="absolute inset-0 -z-10 block size-full rounded-lg bg-gradient-to-r from-themeGreen/60 via-themeGreen to-themeGreen/60 opacity-0 transition duration-300 group-hover:opacity-100"
+              ></span>
+            </a>
+            <!-- Hamburger Icon -->
+            <button
+              id="menu-btn"
+              class="cursor-pointer rounded-sm p-2 text-themeBlue transition-colors duration-150 hover:bg-gray-200 hover:text-gray-700 focus:outline-none"
+              aria-label="Open Menu"
+              aria-controls="mobile-menu"
+              aria-expanded="false"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16m-7 6h7"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div
+          id="mobile-menu"
+          class="fixed -left-full top-0 h-screen w-screen transition-all duration-300 lg:hidden"
+          aria-label="Mobile Navigation"
+          role="dialog"
+          aria-hidden="true"
+        >
+          <div
+            id="mobile-menu-ul-parent"
+            class="absolute left-0 top-0 flex h-full w-full flex-col items-center justify-between overflow-y-auto bg-slate-50 pb-6 pt-8 shadow-lg sm:w-1/2 sm:pt-0"
+            role="menu"
+            aria-label="mobile Navigation"
+          >
+            <!-- close the mobile menu button  -->
+            <button
+              id="mobile-menu-close-button"
+              class="absolute left-2 top-2 block cursor-pointer rounded-sm p-2 text-themeBlue transition-colors duration-150 hover:bg-gray-200 hover:text-gray-700 focus:outline-none sm:hidden"
+              aria-label="Close Menu"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                class="size-6"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6 18 18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+            <!-- mobile menu ul  -->
+            <ul class="w-full space-y-2 px-6 py-4 text-xl" role="menu">
+              <li
+                class="group pointer-events-none relative cursor-pointer whitespace-nowrap rounded-sm p-2 transition-colors duration-150 hover:bg-gray-200"
+                role="menuitem"
+              >
+                <div class="pointer-events-auto w-full">
+                  <a href="./home.html" class="inline-block w-full">الرئيسية</a>
+                </div>
+              </li>
+              <li class="group relative whitespace-nowrap" role="menuitem">
+                <span class="inline-block w-full p-2">خدماتنا</span>
+                <ul class="px-4 py-2" role="menu">
+                  <li
+                    class="group pointer-events-none relative cursor-pointer whitespace-nowrap rounded-sm p-2 transition-colors duration-150 hover:bg-gray-200"
+                    role="menuitem"
+                  >
+                    <div class="pointer-events-auto w-full">
+                      <a href="./service.html" class="inline-block w-full"
+                        >مسك الدفاتر</a
+                      >
+                    </div>
+                  </li>
+                  <li
+                    class="group pointer-events-none relative cursor-pointer whitespace-nowrap rounded-sm p-2 transition-colors duration-150 hover:bg-gray-200"
+                    role="menuitem"
+                  >
+                    <div class="pointer-events-auto w-full">
+                      <a href="./service2.html" class="inline-block w-full"
+                        >المراجعة و التدقيق</a
+                      >
+                    </div>
+                  </li>
+                  <li
+                    class="group pointer-events-none relative cursor-pointer whitespace-nowrap rounded-sm p-2 transition-colors duration-150 hover:bg-gray-200"
+                    role="menuitem"
+                  >
+                    <div class="pointer-events-auto w-full">
+                      <a href="./service3.html" class="inline-block w-full"
+                        >تشغيل الانظمة المحاسبية</a
+                      >
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li
+                class="group pointer-events-none relative cursor-pointer whitespace-nowrap rounded-sm p-2 transition-colors duration-150 hover:bg-gray-200"
+                role="menuitem"
+              >
+                <div class="pointer-events-auto w-full">
+                  <a href="./about.html" class="inline-block w-full">من نحن</a>
+                </div>
+              </li>
+              <li
+                class="group pointer-events-none relative cursor-pointer whitespace-nowrap rounded-sm p-2 transition-colors duration-150 hover:bg-gray-200"
+                role="menuitem"
+              >
+                <div class="pointer-events-auto w-full">
+                  <a href="./contact.html" class="inline-block w-full"
+                    >تواصل معنا</a
+                  >
+                </div>
+              </li>
+              <li
+                class="group pointer-events-none relative cursor-pointer whitespace-nowrap rounded-sm p-2 transition-colors duration-150 hover:bg-gray-200"
+                role="menuitem"
+              >
+                <div class="pointer-events-auto w-full">
+                  <a href="./blogs.html" class="inline-block w-full">المدونة</a>
+                </div>
+              </li>
+            </ul>
+
+            <div class="flex flex-wrap justify-center gap-2">
+              <a href="#" aria-label="Facebook">
+                <img
+                  src="./assets/image/icons/facebook.png"
+                  class="w-8 lg:w-10"
+                  alt="Facebook Icon"
+                />
+              </a>
+              <a href="#" aria-label="Instagram">
+                <img
+                  src="./assets/image/icons/instagram.png"
+                  class="w-8 lg:w-10"
+                  alt="Instagram Icon"
+                />
+              </a>
+              <a href="#" aria-label="LinkedIn">
+                <img
+                  src="./assets/image/icons/linkedin.png"
+                  class="w-8 lg:w-10"
+                  alt="LinkedIn Icon"
+                />
+              </a>
+              <a href="#" aria-label="Twitter">
+                <img
+                  src="./assets/image/icons/x.png"
+                  class="w-8 lg:w-10"
+                  alt="X Twitter Icon"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- FAQ -->
+    <section
+      class="relative flex min-h-[calc(100vh-90px)] items-center justify-center overflow-hidden bg-white px-6 py-10 sm:px-[10%] 2xl:px-0"
+      data-aos="fade-in"
+      data-aos-offset="-10"
+      aria-labelledby="faq-heading"
+      role="region"
+    >
+      <div class="2xl:container" data-aos="fade-up">
+        <h1 id="faq-heading" class="h3 text-themeBlue">
+          الأسئلة الشائعة - كل ما تحتاج معرفته
+        </h1>
+        <p class="p-normal text-gray-700">
+          ابحث عن إجابات لأكثر الأسئلة شيوعاً حول خدماتنا، الإجراءات, والمزيد.
+          إذا لم تجد الإجابة هنا، لا تتردد في التواصل معنا مباشرة!
+        </p>
+        <!-- quastions grid -->
+        <div
+          class="mt-10 grid grid-cols-1 gap-8 transition-all lg:grid-cols-2"
+          role="list"
+        >
+          <!-- card -->
+          <div
+            class="group h-fit transform rounded-lg border bg-white px-4 py-2 shadow-md transition hover:scale-110"
+            data-aos="fade-up"
+            role="listitem"
+            aria-labelledby="faq-question-1"
+            aria-describedby="faq-answer-1"
+          >
+            <h2
+              class="p-normal line-clamp-2 text-gray-700 group-hover:line-clamp-none"
+              id="faq-question-1"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="mr-2 inline-block size-6 transition-all duration-150 group-hover:-rotate-90"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 19.5 8.25 12l7.5-7.5"
+                />
+              </svg>
+              ما الفرق بين شركة أرباح والمحاسب التقليدي؟
+            </h2>
+            <p
+              class="p-small mt-2 line-clamp-3 min-h-12 text-gray-500 transition-all group-hover:line-clamp-none sm:line-clamp-2"
+              id="faq-answer-1"
+            >
+              مع أرباح، تحصل على فريق محاسبي محترف يضم خبراء في مختلف مجالات
+              المحاسبة، مما يوفر لك خدمات شاملة بتكلفة أقل من تكلفة تعيين محاسب
+              واحد بدوام كامل. نحن نعمل على ضمان الامتثال، الدقة، والكفاءة في
+              إدارة عملياتك المحاسبية.
+            </p>
+          </div>
+
+          <!-- card -->
+          <div
+            class="group h-fit transform rounded-lg border bg-white px-4 py-2 shadow-md transition hover:scale-110"
+            data-aos="fade-up"
+            role="listitem"
+            aria-labelledby="faq-question-2"
+            aria-describedby="faq-answer-2"
+          >
+            <h2
+              class="p-normal line-clamp-2 text-gray-700 group-hover:line-clamp-none"
+              id="faq-question-2"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="mr-2 inline-block size-6 transition-all duration-150 group-hover:-rotate-90"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 19.5 8.25 12l7.5-7.5"
+                />
+              </svg>
+              هل تقدمون نظامًا محاسبيًا خاصًا بكم؟
+            </h2>
+            <p
+              class="p-small mt-2 line-clamp-3 min-h-12 text-gray-500 transition-all group-hover:line-clamp-none sm:line-clamp-2"
+              id="faq-answer-2"
+            >
+              نحن لسنا شركة برمجيات أو SaaS، ولكننا نمتلك شبكة واسعة من الشراكات
+              مع أفضل مقدمي البرامج والأنظمة المحاسبية. هذا يمكننا من تقديم
+              خدمات محاسبية متكاملة ومتوافقة مع احتياجات نشاطك التجاري.
+            </p>
+          </div>
+
+          <!-- card -->
+          <div
+            class="group h-fit transform rounded-lg border bg-white px-4 py-2 shadow-md transition hover:scale-110"
+            data-aos="fade-up"
+            role="listitem"
+            aria-labelledby="faq-question-3"
+            aria-describedby="faq-answer-3"
+          >
+            <h2
+              class="p-normal line-clamp-2 text-gray-700 group-hover:line-clamp-none"
+              id="faq-question-3"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="mr-2 inline-block size-6 transition-all duration-150 group-hover:-rotate-90"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 19.5 8.25 12l7.5-7.5"
+                />
+              </svg>
+              ما الفائدة من استخدام خدمات أرباح؟
+            </h2>
+            <p
+              class="p-small mt-2 line-clamp-3 min-h-12 text-gray-500 transition-all group-hover:line-clamp-none sm:line-clamp-2"
+              id="faq-answer-3"
+            >
+              باختيار أرباح، تحصل على شريك محاسبي يعتمد على التكنولوجيا الحديثة،
+              الكفاءة، والخبرة لضمان إدارة مثالية لعملياتك المالية والمحاسبية،
+              مما يسمح لك بالتركيز على تنمية نشاطك التجاري.
+            </p>
+          </div>
+
+          <!-- card -->
+          <div
+            class="group h-fit transform rounded-lg border bg-white px-4 py-2 shadow-md transition hover:scale-110"
+            data-aos="fade-up"
+            role="listitem"
+            aria-labelledby="faq-question-4"
+            aria-describedby="faq-answer-4"
+          >
+            <h2
+              class="p-normal line-clamp-2 text-gray-700 group-hover:line-clamp-none"
+              id="faq-question-4"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="mr-2 inline-block size-6 transition-all duration-150 group-hover:-rotate-90"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 19.5 8.25 12l7.5-7.5"
+                />
+              </svg>
+              هل أنتم شركة سعودية؟
+            </h2>
+            <p
+              class="p-small mt-2 line-clamp-3 min-h-12 text-gray-500 transition-all group-hover:line-clamp-none sm:line-clamp-2"
+              id="faq-answer-4"
+            >
+              نعم، نحن جزء من مجموعة شركات سعودية تعمل تحت مظلة شركة موجة
+              الوسائط. نقدم خدماتنا في جميع أنحاء المملكة العربية السعودية،
+              بالإضافة إلى فروعنا في الكويت والإمارات العربية المتحدة.
+            </p>
+          </div>
+
+          <!-- Card 1  -->
+          <div
+            class="group h-fit transform rounded-lg border bg-white px-4 py-2 shadow-md transition hover:scale-110"
+            data-aos="fade-up"
+            role="listitem"
+            aria-labelledby="faq-question-5"
+            aria-describedby="faq-answer-5"
+          >
+            <h2
+              class="p-normal line-clamp-2 text-gray-700 group-hover:line-clamp-none"
+              id="faq-question-5"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="mr-2 inline-block size-6 transition-all duration-150 group-hover:-rotate-90"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 19.5 8.25 12l7.5-7.5"
+                />
+              </svg>
+              ما هي الخدمات المحاسبية التي تقدمها شركة أرباح؟
+            </h2>
+            <p
+              class="p-small mt-2 line-clamp-3 min-h-12 text-gray-500 transition-all group-hover:line-clamp-none sm:line-clamp-2"
+              id="faq-answer-5"
+            >
+              نقدم خدمات متكاملة تشمل: مسك الدفاتر: تسجيل المبيعات، المشتريات،
+              وإصدار التقارير المالية المختلفة. المراجعة والتدقيق: مراجعة
+              العمليات المحاسبية وضمان التزامها بالقوانين والمعايير. تشغيل
+              الأنظمة المحاسبية: تقديم أنظمة محاسبية مناسبة لطبيعة نشاط العميل،
+              تخصيصها وتشغيلها.
+            </p>
+          </div>
+
+          <!-- Card 2 -->
+          <div
+            class="group h-fit transform rounded-lg border bg-white px-4 py-2 shadow-md transition hover:scale-110"
+            data-aos="fade-up"
+            role="listitem"
+            aria-labelledby="faq-question-6"
+            aria-describedby="faq-answer-6"
+          >
+            <h2
+              class="p-normal line-clamp-2 text-gray-700 group-hover:line-clamp-none"
+              id="faq-question-6"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="mr-2 inline-block size-6 transition-all duration-150 group-hover:-rotate-90"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 19.5 8.25 12l7.5-7.5"
+                />
+              </svg>
+              هل يمكن لشركة أرباح التعامل مع الشركات التي لديها أنظمة محاسبية
+              خاصة بها؟
+            </h2>
+            <p
+              class="p-small mt-2 line-clamp-3 min-h-12 text-gray-500 transition-all group-hover:line-clamp-none sm:line-clamp-2"
+              id="faq-answer-6"
+            >
+              نعم، يمكننا تقديم خدمات مسك الدفاتر والمراجعة والتدقيق باستخدام
+              النظام المحاسبي الخاص بالعميل لضمان تحقيق أقصى استفادة منه.
+            </p>
+          </div>
+
+          <!-- Card 3 -->
+          <div
+            class="group h-fit transform rounded-lg border bg-white px-4 py-2 shadow-md transition hover:scale-110"
+            data-aos="fade-up"
+            role="listitem"
+            aria-labelledby="faq-question-7"
+            aria-describedby="faq-answer-7"
+          >
+            <h2
+              class="p-normal line-clamp-2 text-gray-700 group-hover:line-clamp-none"
+              id="faq-question-7"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="mr-2 inline-block size-6 transition-all duration-150 group-hover:-rotate-90"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 19.5 8.25 12l7.5-7.5"
+                />
+              </svg>
+              ما الأنظمة المحاسبية التي تتعامل معها شركة أرباح؟
+            </h2>
+            <p
+              class="p-small mt-2 line-clamp-3 min-h-12 text-gray-500 transition-all group-hover:line-clamp-none sm:line-clamp-2"
+              id="faq-answer-7"
+            >
+              نتعامل مع أنظمة محاسبية معتمدة مثل دفترة، قيود، وإدارة. جميعها
+              متوافقة مع متطلبات هيئة الزكاة والضريبة في المملكة العربية
+              السعودية.
+            </p>
+          </div>
+
+          <!-- Card 4 -->
+          <div
+            class="group h-fit transform rounded-lg border bg-white px-4 py-2 shadow-md transition hover:scale-110"
+            data-aos="fade-up"
+            role="listitem"
+            aria-labelledby="faq-question-8"
+            aria-describedby="faq-answer-8"
+          >
+            <h2
+              class="p-normal line-clamp-2 text-gray-700 group-hover:line-clamp-none"
+              id="faq-question-8"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="mr-2 inline-block size-6 transition-all duration-150 group-hover:-rotate-90"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 19.5 8.25 12l7.5-7.5"
+                />
+              </svg>
+              هل تقدم شركة أرباح تدريبًا على الأنظمة المحاسبية؟
+            </h2>
+            <p
+              class="p-small mt-2 line-clamp-3 min-h-12 text-gray-500 transition-all group-hover:line-clamp-none sm:line-clamp-2"
+              id="faq-answer-8"
+            >
+              نعم، نوفر جلسات تدريبية على الأنظمة المحاسبية للموظفين لضمان تشغيل
+              النظام بكفاءة وتلبية احتياجات النشاط.
+            </p>
+          </div>
+
+          <!-- Card 5 -->
+          <div
+            class="group h-fit transform rounded-lg border bg-white px-4 py-2 shadow-md transition hover:scale-110"
+            data-aos="fade-up"
+            role="listitem"
+            aria-labelledby="faq-question-9"
+            aria-describedby="faq-answer-9"
+          >
+            <h2
+              class="p-normal line-clamp-2 text-gray-700 group-hover:line-clamp-none"
+              id="faq-question-9"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="mr-2 inline-block size-6 transition-all duration-150 group-hover:-rotate-90"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 19.5 8.25 12l7.5-7.5"
+                />
+              </svg>
+              ما هي التقارير التي توفرها شركة أرباح للعملاء؟
+            </h2>
+            <p
+              class="p-small mt-2 line-clamp-3 min-h-12 text-gray-500 transition-all group-hover:line-clamp-none sm:line-clamp-2"
+              id="faq-answer-9"
+            >
+              نصدر تقارير متنوعة تشمل: تقارير الأداء المالي (ربع سنوية، سنوية،
+              وشهرية) تقارير الميزانية وقائمة التدفقات النقدية. تقارير الأداء
+              والمخزون والتحصيل. تقارير تحذيرية وأداء ائتماني.
+            </p>
+          </div>
+
+          <!-- Card 6 -->
+          <div
+            class="group h-fit transform rounded-lg border bg-white px-4 py-2 shadow-md transition hover:scale-110"
+            data-aos="fade-up"
+            role="listitem"
+            aria-labelledby="faq-question-10"
+            aria-describedby="faq-answer-10"
+          >
+            <h2
+              class="p-normal line-clamp-2 text-gray-700 group-hover:line-clamp-none"
+              id="faq-question-10"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="mr-2 inline-block size-6 transition-all duration-150 group-hover:-rotate-90"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 19.5 8.25 12l7.5-7.5"
+                />
+              </svg>
+              كيف يتم تخصيص الخدمات وفقًا لاحتياجات العميل؟
+            </h2>
+            <p
+              class="p-small mt-2 line-clamp-3 min-h-12 text-gray-500 transition-all group-hover:line-clamp-none sm:line-clamp-2"
+              id="faq-answer-10"
+            >
+              نعمل على تقييم احتياجات العميل بناءً على حجم النشاط وطبيعته، ونخصص
+              فريقًا من المحاسبين والمراجعين والخدمات المحاسبية بما يناسب نشاطه
+              لتحقيق أهدافه المالية.
+            </p>
+          </div>
+
+          <!-- Card 7 -->
+          <div
+            class="group h-fit transform rounded-lg border bg-white px-4 py-2 shadow-md transition hover:scale-110"
+            data-aos="fade-up"
+            role="listitem"
+            aria-labelledby="faq-question-11"
+            aria-describedby="faq-answer-11"
+          >
+            <h2
+              class="p-normal line-clamp-2 text-gray-700 group-hover:line-clamp-none"
+              id="faq-question-11"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="mr-2 inline-block size-6 transition-all duration-150 group-hover:-rotate-90"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 19.5 8.25 12l7.5-7.5"
+                />
+              </svg>
+              هل تلتزم شركة أرباح بالأنظمة والقوانين المحلية والدولية؟
+            </h2>
+            <p
+              class="p-small mt-2 line-clamp-3 min-h-12 text-gray-500 transition-all group-hover:line-clamp-none sm:line-clamp-2"
+              id="faq-answer-11"
+            >
+              نعم، نلتزم بتطبيق الأنظمة والقوانين المحلية (مثل هيئة الزكاة
+              والضريبة في المملكة العربية السعودية) والمعايير المحاسبية الدولية
+              لضمان التوافق التام.
+            </p>
+          </div>
+
+          <!-- Card 8 -->
+          <div
+            class="group h-fit transform rounded-lg border bg-white px-4 py-2 shadow-md transition hover:scale-110"
+            data-aos="fade-up"
+            role="listitem"
+            aria-labelledby="faq-question-12"
+            aria-describedby="faq-answer-12"
+          >
+            <h2
+              class="p-normal line-clamp-2 text-gray-700 group-hover:line-clamp-none"
+              id="faq-question-12"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="mr-2 inline-block size-6 transition-all duration-150 group-hover:-rotate-90"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 19.5 8.25 12l7.5-7.5"
+                />
+              </svg>
+              هل توفر شركة أرباح خدمات مراجعة دورية؟
+            </h2>
+            <p
+              class="p-small mt-2 line-clamp-3 min-h-12 text-gray-500 transition-all group-hover:line-clamp-none sm:line-clamp-2"
+              id="faq-answer-12"
+            >
+              نعم، نقدم خدمات مراجعة دورية تشمل التقارير المالية الشهرية والربع
+              سنوية، ومتابعة الأداء المالي، وضمان دقة العمليات المحاسبية بشكل
+              مستمر.
+            </p>
+          </div>
+
+          <!-- Card 9 -->
+          <div
+            class="group h-fit transform rounded-lg border bg-white px-4 py-2 shadow-md transition hover:scale-110"
+            data-aos="fade-up"
+            role="listitem"
+            aria-labelledby="faq-question-13"
+            aria-describedby="faq-answer-13"
+          >
+            <h2
+              class="p-normal line-clamp-2 text-gray-700 group-hover:line-clamp-none"
+              id="faq-question-13"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="mr-2 inline-block size-6 transition-all duration-150 group-hover:-rotate-90"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 19.5 8.25 12l7.5-7.5"
+                />
+              </svg>
+              هل يمكن لشركة أرباح أن تكون القسم المحاسبي للشركات الصغيرة؟
+            </h2>
+            <p
+              class="p-small mt-2 line-clamp-3 min-h-12 text-gray-500 transition-all group-hover:line-clamp-none sm:line-clamp-2"
+              id="faq-answer-13"
+            >
+              نعم، نوفر خدمات محاسبية متكاملة للشركات الصغيرة التي لا تمتلك قسم
+              محاسبة داخلي، حيث نغطي جميع الجوانب المحاسبية بما يشمل الأنظمة،
+              مسك الدفاتر، والتقارير.
+            </p>
+          </div>
+        </div>
+        <p class="p-extra-small mt-8 text-center text-gray-700 underline">
+          <a href="#"> المزيد من الاسئلة </a>
+        </p>
+      </div>
+    </section>
+
+    <!-- contact form & info section  -->
+    <section
+      class="relative -mb-px lg:flex lg:min-h-[calc(100svh)] lg:items-center lg:justify-center"
+      aria-labelledby="contact-us-heading"
+      role="region"
+      id="contact-us-section"
+    >
+      <h2 class="sr-only" id="contact-us-heading">تواصل معنا</h2>
+      <div
+        class="absolute left-0 top-0 hidden h-[40%] w-full overflow-hidden bg-cover bg-[50%] bg-no-repeat lg:block"
+      >
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2706.818885228106!2d46.8064832739359!3d24.692441786543665!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f076b9f00817b%3A0x44614f2741d977db!2ssky%20mall!5e0!3m2!1sen!2seg!4v1735985198660!5m2!1sen!2seg"
+          width="100%"
+          height="100%"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          title="Arbah Location on the map"
+        ></iframe>
+      </div>
+      <div
+        class="bottom-0 left-0 w-full bg-themeBlue py-6 lg:absolute lg:h-[60%]"
+      >
+        <div
+          class="mx-auto grid w-[80%] grid-cols-1 gap-4 rounded-lg bg-white p-8 pb-6 2xl:container lg:-mt-[5%] lg:grid-cols-2"
+        >
+          <!-- form -->
+          <form
+            id="contact-us-form"
+            class="flex flex-col gap-6"
+            aria-labelledby="contact-form-heading"
+            role="form"
+          >
+            <h2 id="contact-form-heading" class="sr-only">Contact Us Form</h2>
+
+            <div class="relative" data-te-input-wrapper-init>
+              <input
+                type="text"
+                class="peer-focus:text-primary motion-reduce:transition-nonex p-normal peer block min-h-[auto] w-full rounded border-2 bg-transparent px-3 py-[0.32rem] leading-[1.6] text-themeBlue outline-themeGreen transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100"
+                id="exampleInput90"
+                aria-labelledby="name-label"
+                required
+              />
+              <label
+                class="p-normal pointer-events-none absolute right-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[2rem] peer-focus:scale-y-[0.8] peer-focus:font-bold peer-focus:text-themeBlue peer-data-[te-input-state-active]:-translate-y-[1.9rem] peer-data-[te-input-state-active]:scale-y-[0.8] motion-reduce:transition-none"
+                for="exampleInput90"
+                id="name-label"
+              >
+                الأسم
+              </label>
+            </div>
+
+            <div class="flex flex-col gap-6 lg:flex-row">
+              <div class="relative" data-te-input-wrapper-init>
+                <input
+                  type="email"
+                  class="p-normal peer block min-h-[auto] w-full rounded border-2 bg-transparent px-3 py-[0.32rem] leading-[1.6] text-themeBlue outline-themeGreen transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none"
+                  id="exampleInput91"
+                  aria-labelledby="email-label"
+                  required
+                />
+                <label
+                  class="p-normal pointer-events-none absolute right-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[2rem] peer-focus:scale-y-[0.8] peer-focus:font-bold peer-focus:text-themeBlue peer-data-[te-input-state-active]:-translate-y-[1.9rem] peer-data-[te-input-state-active]:scale-y-[0.8] motion-reduce:transition-none"
+                  for="exampleInput91"
+                  id="email-label"
+                >
+                  البريد الألكتروني
+                </label>
+              </div>
+
+              <div class="relative" data-te-input-wrapper-init>
+                <input
+                  type="text"
+                  class="p-normal peer block min-h-[auto] w-full rounded border-2 bg-transparent px-3 py-[0.32rem] leading-[1.6] text-themeBlue outline-themeGreen transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none"
+                  id="exampleInput81"
+                  aria-labelledby="phone-label"
+                  required
+                />
+                <label
+                  class="p-normal pointer-events-none absolute right-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[2rem] peer-focus:scale-y-[0.8] peer-focus:font-bold peer-focus:text-themeBlue peer-data-[te-input-state-active]:-translate-y-[1.9rem] peer-data-[te-input-state-active]:scale-y-[0.8] motion-reduce:transition-none"
+                  for="exampleInput81"
+                  id="phone-label"
+                >
+                  رقم الجوال
+                </label>
+              </div>
+            </div>
+
+            <div class="relative" data-te-input-wrapper-init>
+              <textarea
+                class="p-normal peer block min-h-[auto] w-full resize-none rounded border-2 bg-transparent px-3 py-[0.32rem] leading-[1.6] text-themeBlue outline-themeGreen transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none"
+                id="exampleFormControlTextarea1"
+                rows="3"
+                aria-labelledby="message-label"
+                required
+              ></textarea>
+              <label
+                for="exampleFormControlTextarea1"
+                class="p-normal pointer-events-none absolute right-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[2rem] peer-focus:scale-y-[0.8] peer-focus:font-bold peer-focus:text-themeBlue peer-data-[te-input-state-active]:-translate-y-[1.9rem] peer-data-[te-input-state-active]:scale-y-[0.8] motion-reduce:transition-none"
+                id="message-label"
+              >
+                نص الرسالة
+              </label>
+            </div>
+
+            <button
+              type="submit"
+              class="p-normal block w-full rounded-md bg-themeBlue px-6 py-3 font-bold leading-normal text-white transition-colors duration-150 hover:bg-indigo-700"
+              aria-label="Send message"
+            >
+              أرسال
+            </button>
+          </form>
+
+          <!-- contact info -->
+          <div
+            class="flex flex-wrap justify-center gap-4"
+            role="region"
+            aria-labelledby="contact-info-heading"
+          >
+            <h2 id="contact-info-heading" class="sr-only">
+              Contact Information
+            </h2>
+
+            <!-- card: Email -->
+            <div
+              class="flex min-w-max max-w-full flex-1 items-start gap-2"
+              role="contentinfo"
+            >
+              <div class="text-primary rounded-md bg-sky-200 p-4">
+                <img
+                  src="./assets/image/icons/email_icon.svg"
+                  alt="Email Icon"
+                  class="size-6"
+                  aria-hidden="true"
+                />
+              </div>
+              <div class="p-normal">
+                <p class="mb-2 text-themeBlue">البريد الألكتروني:</p>
+                <a
+                  class="inline-block text-neutral-500"
+                  href="mailto:info@arbah.sa"
+                  aria-label="Send email to info@arbah.sa"
+                >
+                  info@arbah.sa
+                </a>
+              </div>
+            </div>
+
+            <!-- card: Address -->
+            <div
+              class="flex min-w-max max-w-full flex-1 items-start gap-2"
+              role="contentinfo"
+            >
+              <div class="text-primary rounded-md bg-sky-200 p-4">
+                <img
+                  src="./assets/image/icons/address_icon.svg"
+                  alt="Address Icon"
+                  class="size-6"
+                  aria-hidden="true"
+                />
+              </div>
+              <div class="p-normal">
+                <p class="mb-2 text-themeBlue">العنوان:</p>
+                <p
+                  class="line-clamp-3 text-neutral-500"
+                  title="الرياض - حي الروابي - الطريق الدائري الشرقي مخرج 15 تقاطع طريق الأمير سعد بن عبدالرحمن الأول مع الإمام الشافعي مبنى سكاي مول - مركز نيلوفز للأعمال - الدور الأول"
+                  aria-label="Address: Riyadh - Al Rawabi District - Eastern Ring Road, Exit 15, Intersection of Prince Saad Bin Abdulrahman and Imam Al-Shafi'i Road, Sky Mall Building - Nilufaz Business Center - First Floor"
+                >
+                  الرياض - حي الروابي
+                </p>
+              </div>
+            </div>
+
+            <!-- card: Landline phone -->
+            <div
+              class="flex min-w-max max-w-full flex-1 items-start gap-2"
+              role="contentinfo"
+            >
+              <div class="text-primary rounded-md bg-sky-200 p-4">
+                <img
+                  src="./assets/image/icons/landline_phone_icon.svg"
+                  alt="Landline phone icon"
+                  class="size-6"
+                  aria-hidden="true"
+                />
+              </div>
+              <div class="p-normal">
+                <p class="mb-2 text-themeBlue">للأتصال:</p>
+                <a
+                  class="inline-block text-neutral-500"
+                  href="tel:+966920031093"
+                  style="direction: ltr"
+                  aria-label="Call the landline number +966 92 003 1093"
+                >
+                  +966 92 003 1093
+                </a>
+              </div>
+            </div>
+
+            <!-- card: WhatsApp -->
+            <div
+              class="flex min-w-max max-w-full flex-1 items-start gap-2"
+              role="contentinfo"
+            >
+              <div class="text-primary rounded-md bg-sky-200 p-4">
+                <img
+                  src="./assets/image/icons/whatsapp_icon_dark.svg"
+                  alt="WhatsApp Icon"
+                  class="size-6"
+                  aria-hidden="true"
+                />
+              </div>
+              <div class="p-normal">
+                <p class="mb-2 text-themeBlue">واتس اب:</p>
+                <a
+                  class="inline-block text-neutral-500"
+                  style="direction: ltr"
+                  href="https://api.whatsapp.com/send/?phone=966553510931&text&type=phone_number&app_absent=0"
+                  aria-label="Send message on WhatsApp to +966 55 351 0931"
+                >
+                  +966 55 351 0931
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer section -->
+    <footer
+      class="relative flex flex-col items-center justify-between bg-themeBlue px-6 pb-1 pt-32 sm:px-[10%]"
+      role="contentinfo"
+      aria-labelledby="footer-heading"
+    >
+      <h2 id="footer-heading" class="sr-only">Footer Section</h2>
+
+      <div
+        class="flex w-full flex-col items-center justify-center gap-4 2xl:container lg:flex-row lg:justify-between"
+      >
+        <!-- right side -->
+        <div>
+          <a href="./home.html">
+            <img
+              src="./assets/image/logo_white.png"
+              alt="أربَاحْ"
+              class="mx-auto max-w-[15rem] lg:mx-0"
+            />
+          </a>
+          <h2 class="h4 mt-4 pr-8 text-center text-themeGreen lg:text-start">
+            حِينَما تتحدَّثُ الأرقَامُ
+          </h2>
+        </div>
+
+        <!-- center side -->
+        <div class="p-small hidden gap-4 text-themeLightBlue lg:flex">
+          <ul
+            class="flex flex-col items-start gap-4"
+            role="navigation"
+            aria-label="Footer Navigation"
+          >
+            <li
+              class="group relative cursor-pointer whitespace-nowrap rounded-sm"
+              role="menuitem"
+            >
+              <a href="./home.html">الرئيسية</a>
+            </li>
+            <li
+              class="group relative cursor-pointer whitespace-nowrap rounded-sm"
+              role="menuitem"
+            >
+              <a href="./about.html">من نحن</a>
+            </li>
+            <li
+              class="group relative cursor-pointer whitespace-nowrap rounded-sm"
+              role="menuitem"
+            >
+              <a href="./contact.html">تواصل معنا</a>
+            </li>
+            <li
+              class="group relative cursor-pointer whitespace-nowrap rounded-sm"
+              role="menuitem"
+            >
+              <a href="./contact.html">المدونة</a>
+            </li>
+          </ul>
+          <ul
+            class="flex flex-col items-start gap-4"
+            role="navigation"
+            aria-label="Footer Services"
+          >
+            <li
+              class="group relative cursor-pointer whitespace-nowrap rounded-sm"
+              role="menuitem"
+            >
+              <a href="./service.html">مسك الدفاتر</a>
+            </li>
+            <li
+              class="group relative cursor-pointer whitespace-nowrap rounded-sm"
+              role="menuitem"
+            >
+              <a href="./service2.html">المراجعة و التدقيق</a>
+            </li>
+            <li
+              class="group relative cursor-pointer whitespace-nowrap rounded-sm"
+              role="menuitem"
+            >
+              <a href="./service3.html">تشغيل الانظمة المحاسبية</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- left side: social media -->
+        <div
+          class="max-w-sm rounded-lg border-2 border-gray-300 bg-slate-100 p-4 text-lg"
+          aria-labelledby="social-media-heading"
+        >
+          <h3 id="social-media-heading" class="p-small mb-2 px-2 text-center">
+            تابعنا
+          </h3>
+          <div class="flex flex-wrap justify-center gap-2">
+            <a href="#" aria-label="Visit Facebook">
+              <img
+                src="./assets/image/icons/facebook.png"
+                class="w-8 lg:w-10"
+                alt="Facebook"
+              />
+            </a>
+            <a href="#" aria-label="Visit Instagram">
+              <img
+                src="./assets/image/icons/instagram.png"
+                class="w-8 lg:w-10"
+                alt="Instagram"
+              />
+            </a>
+            <a href="#" aria-label="Visit LinkedIn">
+              <img
+                src="./assets/image/icons/linkedin.png"
+                class="w-8 lg:w-10"
+                alt="LinkedIn"
+              />
+            </a>
+            <a href="#" aria-label="Visit Twitter">
+              <img
+                src="./assets/image/icons/x.png"
+                class="w-8 lg:w-10"
+                alt="X Twitter"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- footer bottom section -->
+      <div
+        class="w-full py-4 text-xs font-semibold text-gray-100 2xl:container sm:text-sm"
+      >
+        <hr />
+        <div class="flex items-center justify-between">
+          <p>جميع الحقوق محفوظة © 2025</p>
+          <div
+            class="flex gap-2 lg:gap-4"
+            role="navigation"
+            aria-label="Footer legal links"
+          >
+            <a href="./404.html" class="">الشروط والأحكام</a>
+            |
+            <a href="./404.html" class="">سياسة الخصوصية</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- WhatsApp contact button -->
+    <a
+      href="https://api.whatsapp.com/send/?phone=966553510931&text&type=phone_number&app_absent=0"
+      target="_blank"
+      class="fixed bottom-6 right-6 box-border size-10 animate-bounce cursor-pointer rounded-full border border-themeGreen bg-themeBlue p-1 transition-all duration-300 hover:-translate-y-4 hover:animate-none hover:shadow-xl hover:shadow-gray-900 md:size-12 md:p-2 lg:size-14 lg:p-3"
+      role="button"
+      aria-label="Contact us on WhatsApp"
+    >
+      <!-- <i class="uil uil-arrow-up-right absolute text-[3.5rem]"></i> -->
+      <img
+        src="./assets/image/icons/whatsapp.png"
+        class="size-full"
+        alt="WhatsApp logo"
+      />
+    </a>
+
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="./assets/js/faq.js"></script>
+  </body>
+</html>
