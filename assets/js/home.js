@@ -175,10 +175,19 @@ function initKeenSlider2() {
     if (autoScrollInterval) {
       clearInterval(autoScrollInterval);
     }
-    if (autoScrollStatus) {
-      autoScrollInterval = setInterval(() => {
-        keenSlider.next();
-      }, 3000);
+    autoScrollStatus = true;
+    autoScrollInterval = setInterval(() => {
+      keenSlider.next();
+    }, 3000);
+  }
+  function pauseAutoScroll(timeout) {
+    if (autoScrollInterval) {
+      clearInterval(autoScrollInterval);
+      if (autoScrollStatus) {
+        setTimeout(() => {
+          stratAutoScroll();
+        }, timeout);
+      }
     }
   }
   function stopAutoScroll() {
@@ -191,10 +200,20 @@ function initKeenSlider2() {
       stopAutoScroll();
     });
     slider.addEventListener('mouseleave', () => {
-      autoScrollStatus = true;
       stratAutoScroll();
     });
   }
+  // controls
+  const keenSliderPrevious = document.getElementById('keen-slider-previous-2');
+  const keenSliderNext = document.getElementById('keen-slider-next-2');
+  keenSliderPrevious.addEventListener('click', () => {
+    keenSlider.prev();
+    pauseAutoScroll(3000);
+  });
+  keenSliderNext.addEventListener('click', () => {
+    keenSlider.next();
+    pauseAutoScroll(3000);
+  });
 }
 initKeenSlider2();
 
@@ -224,8 +243,7 @@ function initKeenSlider3() {
       setTimeout(() => stratAutoScroll(), 0); // auto scroll
       setTimeout(() => addHoverEventToSlides(), 0); // add hover event
     },
-  });
-  // auto scroll
+  }); // auto scroll
   let autoScrollInterval;
   let autoScrollStatus = true;
   function stratAutoScroll() {
@@ -237,10 +255,19 @@ function initKeenSlider3() {
     if (autoScrollInterval) {
       clearInterval(autoScrollInterval);
     }
-    if (autoScrollStatus) {
-      autoScrollInterval = setInterval(() => {
-        keenSlider.next();
-      }, 3000);
+    autoScrollStatus = true;
+    autoScrollInterval = setInterval(() => {
+      keenSlider.next();
+    }, 3000);
+  }
+  function pauseAutoScroll(timeout) {
+    if (autoScrollInterval) {
+      clearInterval(autoScrollInterval);
+      if (autoScrollStatus) {
+        setTimeout(() => {
+          stratAutoScroll();
+        }, timeout);
+      }
     }
   }
   function stopAutoScroll() {
@@ -248,14 +275,24 @@ function initKeenSlider3() {
     clearInterval(autoScrollInterval);
   }
   function addHoverEventToSlides() {
-    const slider = document.getElementById('keen-slider-2');
+    const slider = document.getElementById('keen-slider-3');
     slider.addEventListener('mouseenter', () => {
       stopAutoScroll();
     });
     slider.addEventListener('mouseleave', () => {
-      autoScrollStatus = true;
       stratAutoScroll();
     });
   }
+  // controls
+  const keenSliderPrevious = document.getElementById('keen-slider-previous-3');
+  const keenSliderNext = document.getElementById('keen-slider-next-3');
+  keenSliderPrevious.addEventListener('click', () => {
+    keenSlider.prev();
+    pauseAutoScroll(3000);
+  });
+  keenSliderNext.addEventListener('click', () => {
+    keenSlider.next();
+    pauseAutoScroll(3000);
+  });
 }
 initKeenSlider3();
