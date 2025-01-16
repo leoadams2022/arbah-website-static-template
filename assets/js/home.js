@@ -81,9 +81,10 @@ function initKeenSlider() {
     // Add the 'active-slide' class to the active slide
     // const activeSlideElement = slides[activeSlideIndex]?.el;
     const slidesParent = document.getElementById('keen-slider');
-    Array.from(slidesParent.children).forEach((child) =>
-      child.classList.remove('active')
-    );
+    Array.from(slidesParent.children).forEach((child, i) => {
+      if (i === activeSlideIndex) return;
+      child.classList.remove('active');
+    });
     const activeSlideElement = slidesParent.children[activeSlideIndex];
     if (activeSlideElement) {
       activeSlideElement.classList.add('active');

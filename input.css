@@ -37,3 +37,7 @@ html {
 .p-extra-small {
   @apply text-[0.6rem] leading-normal md:text-xs md:leading-normal lg:text-sm lg:leading-relaxed;
 }
+
+.theme-container {
+  @apply mx-auto w-full px-6 sm:max-w-xl sm:px-0 md:max-w-2xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl;
+}
